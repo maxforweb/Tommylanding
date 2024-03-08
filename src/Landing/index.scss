@@ -5,26 +5,26 @@
   --section-padding-block: 50px;
 }
 
-
-.story__c {
-  display: block;
-  width: 200px;
-  height: 270px;
-  background-size: contain;
-  position: absolute;
-  left: -200px;
-  top: -140px
-}
-
 .story__item {
   color: #fff;
   position: relative;
-}
-
-.story__item img {
-  object-fit: contain;
-  width: 100%;
-  height: 100%;
+  picture {
+    img {
+      width: 100%;
+    }
+  }
+  .dec-ellipse {
+    display: block;
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    @media (min-width: 1439.98px) {
+      left: -150px;
+      top: -120px;
+    }
+  }
 }
 
 .story__item:first-child {
@@ -60,6 +60,7 @@
 @media (min-width: 1439.98px) {
   .story__item:first-child {
     padding-left: 146px;
+    padding-right: 0;
   }
 
   .story__item>img {
@@ -67,19 +68,300 @@
   }
 }
 
+.dec {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.features__wrapper {
+  position: relative;
+  .dec-star {
+    left: -200px;
+    top: 0;
+  }
+  .dec-ellipse {
+    position: absolute;
+    right: -200px;
+    bottom: -50px;
+    z-index: 1;
+  }
+}
+
+.feauters-stack {
+  --card-size: 370px;
+  --gap: 25px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(var(--card-size), 1fr));
+  gap: var(--gap);
+  
+}
+
 .MuiPaper-root.feature {
   border: 3px solid #fff;
   border-radius: 30px;
   padding: 37px 30px 33px 30px;
   background: transparent;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-end ;
-  justify-content: space-between;
-  max-width: 33%;
-  width: 100%;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+
+  > * {
+    position: relative;
+    z-index: 2;
+  }
+
+  > p:last-of-type {
+    margin-bottom: 55px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(202,222,255);
+    background: linear-gradient(0deg, rgba(202,222,255,1) 0%, rgba(105,30,226,1) 20%);
+    transition: opacity 0.3s;
+    opacity: 0;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  &:first-of-type {
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
 }
 
 .MuiPaper-root.feature > img {
-  margin-top: 30px;
+  margin-top: auto;
+  margin-left: auto;
+}
+
+.invite__wrapper {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 650px;
+    height: 650px;
+    background: rgb(202,222,255);
+    background: linear-gradient(90deg, rgba(238,41,255,1) 0%, rgba(23,33,255,1) 100%);
+    opacity: .2;
+    border-radius: 50%;
+    filter: blur(100px);
+  }
+}
+
+.invite__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.invite__grid {
+  --_gap: 160px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--_gap);
+
+  @media (max-width: 1439px) {
+    --_gap: 40px; 
+  }
+  @media (max-width: 960px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.invite__icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.invite-list {
+  position: relative;
+}
+
+.invite-list__item {
+  position: relative;
+
+  &:not(:last-child) {
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50px;
+      left: 23px;
+      background-image: url("data:image/svg+xml,%3Csvg width='2' height='73' viewBox='0 0 2 73' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='1' y1='72' x2='1' y2='1' stroke='white' stroke-width='2' stroke-linecap='round' stroke-dasharray='10 10'/%3E%3C/svg%3E%0A");
+      width: 2px;
+      height: 100%;
+    }
+  }
+}
+
+.invite__item-box {
+  border: 2px solid #fff;
+  border-radius: 30px;
+  padding: 35px;
+
+  .invite__item-group {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  .invite__input {
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 18px 25px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    button {
+      min-width: 0;
+    }
+  }
+}
+
+.swap__wrapper {
+  --card-size: 370px;
+  --gap: 25px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(var(--card-size), 1fr));
+  gap: var(--gap);
+  align-items: center;
+  place-items: center;
+
+  > * {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.tokenomics__wrapper {
+  position: relative;
+
+  .dec-star {
+    position: absolute;
+    left: -200px;
+    top: 50px;
+  }
+
+  .dec-coin-lg {
+    left: -160px;
+    top: -50px;
+  }
+
+  .dec-coin-lg-op {
+    right: -220px;
+    bottom: -150px;
+  }
+
+  .dec-coin-sm {
+    right: -140px;
+    top: -50px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    height: 650px;
+    background: rgb(202,222,255);
+    background: linear-gradient(90deg, rgba(238,41,255,1) 0%, rgba(23,33,255,1) 100%);
+    opacity: .7;
+    border-radius: 50%;
+    filter: blur(100px);
+  }
+}
+
+.tokenomics {
+  display: grid;
+  grid-template-columns: .7fr .3fr;
+  gap: 15px;
+  .tokenomics__item {
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, .6);
+
+    > * {
+      &:first-child {
+        margin-right: 20px;
+      }
+    }
+
+    &:nth-child(3n) {
+      grid-column: 1 / -1;
+    }
+  }
+}
+
+.why__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+  gap: 70px;
+
+  .why-box {
+    > img {
+      margin-bottom: 35px;
+    }
+  }
+}
+
+.faq__wrapper {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70vw;
+    height: 100%;
+    background: rgb(202,222,255);
+    background: 
+    linear-gradient(180deg, #00C2FF 0%, #691EE2 40%),
+    linear-gradient(180deg, rgba(23,33,255,1) 40%, rgba(238,41,255,1) 100%)
+    ;
+    opacity: .7;
+    border-radius: 50%;
+    filter: blur(100px);
+  }
 }
