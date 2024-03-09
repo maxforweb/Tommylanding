@@ -24,12 +24,15 @@ const Invite = () => {
 				}}>
 				<Box className='invite__header'>
 					<Typography
+						data-aos='fade-right'
 						variant='h2'
 						maxWidth={500}
 						width='100%'>
 						Invite friends. Earn together
 					</Typography>
-					<Box className='invite__friends'>
+					<Box
+						className='invite__friends'
+						data-aos='fade-left'>
 						<Typography
 							variant='h6'
 							sx={{ fontWeight: "medium" }}>
@@ -51,12 +54,15 @@ const Invite = () => {
 					</Box>
 				</Box>
 				<Typography
+					data-aos='fade-right'
 					variant='h3'
 					sx={{ mb: "30px", mt: "80px" }}>
 					How it Works
 				</Typography>
 				<Box className='invite__grid'>
-					<Box className='invite__item'>
+					<Box
+						className='invite__item'
+						data-aos='fade-right'>
 						<List className='invite-list'>
 							<InviteItem
 								icon={envelope}
@@ -75,7 +81,9 @@ const Invite = () => {
 							/>
 						</List>
 					</Box>
-					<Box className='invite__item'>
+					<Box
+						className='invite__item'
+						data-aos='fade-left'>
 						<Box className='invite__item-box'>
 							<Box className='invite__item-group'>
 								<Typography

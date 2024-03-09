@@ -1,3 +1,5 @@
+import Parallax from "react-rellax";
+
 import { Box, Typography } from "@mui/material";
 import ellipse from "../../decoration/ellipse.svg";
 import cat from "./img/cat.jpg";
@@ -8,15 +10,19 @@ const Story = () => {
 		<>
 			<Box>
 				<div className='story__wrapper'>
-					<div className='story__item'>
+					<div
+						className='story__item'
+						data-aos='fade-right'>
 						<Box>
 							<Typography
 								variant='h2'
 								sx={{ position: "relative" }}>
-								<img
-									className='dec-ellipse'
-									src={ellipse}
-								/>
+								<Parallax speed={-3}>
+									<img
+										className='dec dec-ellipse'
+										src={ellipse}
+									/>
+								</Parallax>
 								The Story
 							</Typography>
 							<Typography
@@ -56,7 +62,9 @@ const Story = () => {
 							</Typography>
 						</Box>
 					</div>
-					<div className='story__item'>
+					<div
+						className='story__item'
+						data-aos='fade-left'>
 						<picture>
 							<source
 								media='(min-width: 1024px)'

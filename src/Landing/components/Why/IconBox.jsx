@@ -1,7 +1,9 @@
 import { Box, Typography } from "@mui/material";
-const IconBox = ({ icon, children }) => {
+const IconBox = ({ icon, animation, children }) => {
 	return (
-		<Box className='why-box'>
+		<Box
+			className='why-box'
+			data-aos={animation}>
 			<img
 				className='why-box__icon'
 				src={icon}

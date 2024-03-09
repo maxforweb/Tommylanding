@@ -7,6 +7,7 @@ const Quote = () => {
 	return (
 		<DefaultContainer padding={{ lg: "0 15rem", md: "0 30px", xs: "0 20px" }}>
 			<Grid
+				data-aos='zoom-in'
 				container
 				spacing={0}
 				sx={{

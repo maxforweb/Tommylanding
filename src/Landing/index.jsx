@@ -1,3 +1,7 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import { Container } from "@mui/material";
 import {
 	Form,
@@ -14,6 +18,9 @@ import {
 import "./index.scss";
 
 const Landing = () => {
+	useEffect(() => {
+		AOS.init();
+	}, []);
 	return (
 		<Container
 			maxWidth='100%'

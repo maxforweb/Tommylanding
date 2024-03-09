@@ -7,7 +7,7 @@ const SwapBlock = () => {
 	return (
 		<DefaultContainer padding={{ lg: "0 15rem", md: "0 30px", xs: "0 20px" }}>
 			<Box className='swap__wrapper'>
-				<Box>
+				<Box data-aos='fade-right'>
 					<Typography
 						fontWeight={700}
 						variant='h2'
@@ -28,7 +28,7 @@ const SwapBlock = () => {
 						</Typography>
 					</Typography>
 				</Box>
-				<Box>
+				<Box data-aos='fade-left'>
 					<img
 						src={swap}
 						alt='Swap To Get It'

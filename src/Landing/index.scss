@@ -308,7 +308,7 @@
 
 .tokenomics {
   display: grid;
-  grid-template-columns: 65% 35%;
+  grid-template-columns: 2fr 1fr;
   gap: 15px;
   .tokenomics__item {
     border: 2px solid #fff;
@@ -342,35 +342,18 @@
 
 .why__wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
   gap: 70px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
 
 
   .why-box {
     > img {
       margin-bottom: 35px;
     }
-  }
-}
-
-.faq__wrapper {
-  position: relative;
-  &::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 70vw;
-    height: 100%;
-    background: rgb(202,222,255);
-    background: 
-    linear-gradient(180deg, #00C2FF 0%, #691EE2 40%),
-    linear-gradient(180deg, rgba(23,33,255,1) 40%, rgba(238,41,255,1) 100%)
-    ;
-    opacity: .7;
-    border-radius: 50%;
-    filter: blur(100px);
   }
 }
 
@@ -383,9 +366,9 @@
   &::before {
     content: '';
     position: absolute;
-    top: -10%;
+    top: 60%;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, -50%);
     width: 70vw;
     height: 650px;
     background: rgb(202,222,255);

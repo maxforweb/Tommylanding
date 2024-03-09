@@ -1,3 +1,5 @@
+import Parallax from "react-rellax";
+
 import { Box, Paper, Typography } from "@mui/material";
 import DefaultContainer from "../default/Container";
 
@@ -24,16 +26,20 @@ const Features = () => {
 					width='100%'>
 					Features
 				</Typography>
-				<img
-					className='dec dec-star'
-					src={star}
-				/>
+				<Parallax speed={2}>
+					<img
+						className='dec dec-star'
+						src={star}
+					/>
+				</Parallax>
 				<Box
 					sx={{
 						mt: "50px",
 					}}
 					className='feauters-stack'>
-					<Paper className='feature'>
+					<Paper
+						className='feature'
+						data-aos='zoom-in'>
 						<Typography
 							variant='h3'
 							sx={{ width: "100%" }}>
@@ -54,7 +60,9 @@ const Features = () => {
 							height={76}
 						/>
 					</Paper>
-					<Paper className='feature'>
+					<Paper
+						className='feature'
+						data-aos='zoom-in'>
 						<Typography
 							variant='h3'
 							sx={{ width: "100%" }}>
@@ -74,7 +82,9 @@ const Features = () => {
 							height={76}
 						/>
 					</Paper>
-					<Paper className='feature'>
+					<Paper
+						className='feature'
+						data-aos='zoom-in'>
 						<Typography
 							variant='h3'
 							sx={{ width: "100%" }}>
@@ -95,10 +105,12 @@ const Features = () => {
 						/>
 					</Paper>
 				</Box>
-				<img
-					className='dec-ellipse'
-					src={ellipse}
-				/>
+				<Parallax speed={3}>
+					<img
+						className='dec-ellipse'
+						src={ellipse}
+					/>
+				</Parallax>
 			</Box>
 		</DefaultContainer>
 	);
