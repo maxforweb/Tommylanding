@@ -5,7 +5,7 @@ import quote from "./img/quote.png";
 
 const Quote = () => {
 	return (
-		<DefaultContainer padding={{ lg: "0 15rem", md: "0 30px", xs: "0 15px" }}>
+		<DefaultContainer padding={{ lg: "0 15rem", md: "0 30px", xs: "0 20px" }}>
 			<Grid
 				container
 				spacing={0}

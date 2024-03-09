@@ -1,5 +1,16 @@
 import { Container } from "@mui/material";
-import { Form, Quote, Features, Story, Invite, Swap, Tokenomics, Why, Faq } from "./components";
+import {
+	Form,
+	Quote,
+	Features,
+	Story,
+	Invite,
+	Swap,
+	Tokenomics,
+	Why,
+	Faq,
+	Footer,
+} from "./components";
 import "./index.scss";
 
 const Landing = () => {
@@ -15,6 +26,7 @@ const Landing = () => {
 			<Tokenomics />
 			<Why />
 			<Faq />
+			<Footer />
 		</Container>
 	);
 };

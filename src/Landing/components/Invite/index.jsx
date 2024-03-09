@@ -16,7 +16,12 @@ const Invite = () => {
 		<DefaultContainer>
 			<Box
 				className='invite__wrapper'
-				sx={{ mb: "170px" }}>
+				sx={{
+					mb: {
+						xs: "70px",
+						lg: "170px",
+					},
+				}}>
 				<Box className='invite__header'>
 					<Typography
 						variant='h2'

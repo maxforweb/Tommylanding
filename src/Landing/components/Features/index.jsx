@@ -12,7 +12,12 @@ const Features = () => {
 		<DefaultContainer>
 			<Box
 				className='features__wrapper'
-				sx={{ mb: "170px" }}>
+				sx={{
+					mb: {
+						xs: "70px",
+						lg: "170px",
+					},
+				}}>
 				<Typography
 					variant='h2'
 					textAlign='center'
@@ -20,7 +25,7 @@ const Features = () => {
 					Features
 				</Typography>
 				<img
-					className='dec-star'
+					className='dec dec-star'
 					src={star}
 				/>
 				<Box

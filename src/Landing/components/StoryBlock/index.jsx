@@ -63,7 +63,7 @@ const Story = () => {
 								srcSet={cat}
 							/>
 							<source
-								media='(max-width: 768px)'
+								media='(max-width: 1023.98px)'
 								srcSet={catSm}
 							/>
 							<img

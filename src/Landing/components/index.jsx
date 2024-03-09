@@ -6,3 +6,4 @@ export { default as Swap } from "./Swap";
 export { default as Tokenomics } from "./Tokenomics";
 export { default as Why } from "./Why";
 export { default as Faq } from "./Faq";
+export { default as Footer } from "./Footer";

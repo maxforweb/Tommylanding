@@ -10,10 +10,19 @@ import coinLgOpacity from "../../decoration/coin-lg-opacity.png";
 
 const Tokenomics = () => {
 	return (
-		<DefaultContainer padding={{ lg: "0 15rem", md: "0 30px", xs: "0 15px" }}>
+		<DefaultContainer padding={{ lg: "0 15rem", md: "0 30px", xs: "0 20px" }}>
 			<Box
 				className='tokenomics__wrapper'
-				sx={{ mb: "180px", mt: "170px" }}>
+				sx={{
+					mt: {
+						xs: "70px",
+						lg: "180px",
+					},
+					mb: {
+						xs: "70px",
+						lg: "180px",
+					},
+				}}>
 				<img
 					className='dec dec-star'
 					src={star}

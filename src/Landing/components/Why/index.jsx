@@ -10,7 +10,7 @@ import icon4 from "../../decoration/why/icon4.svg";
 
 const Why = () => {
 	return (
-		<DefaultContainer padding={{ xl: "0 15rem", lg: "0 10px", xs: "0 15px" }}>
+		<DefaultContainer padding={{ xl: "0 15rem", lg: "0 10px", xs: "0 20px" }}>
 			<Typography
 				variant='h2'
 				textAlign='center'

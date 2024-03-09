@@ -64,7 +64,7 @@ const FaqAccordion = () => {
 					}}>
 					<Typography
 						variant='h3'
-						sx={{ color: "#FFFFFF" }}>
+						sx={{ color: "#FFFFFF", mr: "15px" }}>
 						How do I Buy and Sell $TOM?
 					</Typography>
 				</AccordionSummary>
@@ -112,7 +112,7 @@ const FaqAccordion = () => {
 					}}>
 					<Typography
 						variant='h3'
-						sx={{ color: "#FFFFFF" }}>
+						sx={{ color: "#FFFFFF", mr: "15px" }}>
 						How do I Buy and Sell $MYRO?
 					</Typography>
 				</AccordionSummary>
@@ -160,7 +160,7 @@ const FaqAccordion = () => {
 					}}>
 					<Typography
 						variant='h3'
-						sx={{ color: "#FFFFFF" }}>
+						sx={{ color: "#FFFFFF", mr: "15px" }}>
 						How do I Buy and Sell $TOM?
 					</Typography>
 				</AccordionSummary>

@@ -5,15 +5,20 @@ import swap from "../../decoration/swap.jpg";
 
 const SwapBlock = () => {
 	return (
-		<DefaultContainer padding={{ lg: "0 15rem", md: "0 30px", xs: "0 15px" }}>
+		<DefaultContainer padding={{ lg: "0 15rem", md: "0 30px", xs: "0 20px" }}>
 			<Box className='swap__wrapper'>
 				<Box>
 					<Typography
-						variant='h1'
-						component='h2'
 						fontWeight={700}
+						variant='h2'
 						lineHeight={1}
-						textAlign={"center"}>
+						textAlign={"center"}
+						sx={{
+							fontSize: {
+								xs: "60px",
+								lg: "100px",
+							},
+						}}>
 						Swap to Get it!
 						<Typography
 							sx={{ mt: 2 }}
