@@ -5,10 +5,10 @@ import TokenomicsBox from "./TokenomicsBox";
 
 import { Box, Typography } from "@mui/material";
 
-import star from "../../decoration/star.svg";
-import coinLg from "../../decoration/coin-lg.png";
-import coinSm from "../../decoration/coin-sm.png";
-import coinLgOpacity from "../../decoration/coin-lg-opacity.png";
+import star from "../../assets/star.svg";
+import coinLg from "../../assets/coin-lg.png";
+import coinSm from "../../assets/coin-sm.png";
+import coinLgOpacity from "../../assets/coin-lg-opacity.png";
 
 const Tokenomics = () => {
 	return (

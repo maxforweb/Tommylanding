@@ -1,7 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import DefaultContainer from "../default/Container";
 
-import swap from "../../decoration/swap.jpg";
+import swap from "../../assets/swap.jpg";
 
 const SwapBlock = () => {
 	return (

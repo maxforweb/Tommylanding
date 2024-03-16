@@ -2,12 +2,12 @@ import DefaultContainer from "../default/Container";
 
 import { Box, Typography, Link } from "@mui/material";
 
-import logo from "../../decoration/logo.svg";
-import cat from "../../decoration/cat.png";
+import logo from "../../assets/logo.svg";
+import cat from "../../assets/cat.png";
 
 const Footer = () => {
 	return (
-		<Box className='footer footer__wrapper'>
+		<footer className='footer footer__wrapper'>
 			<DefaultContainer padding={{ xl: "0 8.125rem", lg: "0 5rem", xs: "0 20px" }}>
 				<Box className='footer__grid'>
 					<Box className='footer__logo'>
@@ -87,7 +87,7 @@ const Footer = () => {
 					</Box>
 				</Box>
 			</DefaultContainer>
-		</Box>
+		</footer>
 	);
 };
 

@@ -3,10 +3,10 @@ import IconBox from "./IconBox";
 
 import { Box, Typography } from "@mui/material";
 
-import icon1 from "../../decoration/why/icon1.svg";
-import icon2 from "../../decoration/why/icon2.svg";
-import icon3 from "../../decoration/why/icon3.svg";
-import icon4 from "../../decoration/why/icon4.svg";
+import icon1 from "../../assets/why/icon1.svg";
+import icon2 from "../../assets/why/icon2.svg";
+import icon3 from "../../assets/why/icon3.svg";
+import icon4 from "../../assets/why/icon4.svg";
 
 const Why = () => {
 	return (

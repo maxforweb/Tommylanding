@@ -3,9 +3,9 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import { Box, Typography } from "@mui/material";
 
-import { ReactComponent as ArrowIcon } from "../../decoration/arrow.svg";
+import { ReactComponent as ArrowIcon } from "../../assets/arrow.svg";
 
-import arrow from "../../decoration/arrow.svg";
+import arrow from "../../assets/arrow.svg";
 
 const AccordionArrowIcon = () => {
 	return (

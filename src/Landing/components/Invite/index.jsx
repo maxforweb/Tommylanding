@@ -5,11 +5,11 @@ import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import InviteItem from "./InviteItem";
 
-import people from "../../decoration/people-icon.svg";
-import envelope from "../../decoration/invite/envelope.svg";
-import share from "../../decoration/invite/link.svg";
-import money from "../../decoration/invite/money.svg";
-import copy from "../../decoration/invite/copy.svg";
+import people from "../../assets/people-icon.svg";
+import envelope from "../../assets/invite/envelope.svg";
+import share from "../../assets/invite/link.svg";
+import money from "../../assets/invite/money.svg";
+import copy from "../../assets/invite/copy.svg";
 
 const Invite = () => {
 	return (

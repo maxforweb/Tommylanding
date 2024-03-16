@@ -5,8 +5,8 @@ import { Box, Typography } from "@mui/material";
 import FaqAccordion from "./Accordion";
 import DefaultContainer from "../default/Container";
 
-import star from "../../decoration/star.svg";
-import ellipse from "../../decoration/ellipse.svg";
+import star from "../../assets/star.svg";
+import ellipse from "../../assets/ellipse.svg";
 
 const Faq = () => {
 	return (

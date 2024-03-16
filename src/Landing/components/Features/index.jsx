@@ -6,13 +6,14 @@ import DefaultContainer from "../default/Container";
 import bot from "./img/bot.svg";
 import power from "./img/power.svg";
 import tokens from "./img/tokens.svg";
-import star from "../../decoration/star.svg";
-import ellipse from "../../decoration/ellipse.svg";
+import star from "../../assets/star.svg";
+import ellipse from "../../assets/ellipse.svg";
 
 const Features = () => {
 	return (
 		<DefaultContainer>
 			<Box
+				id="features-section"
 				className='features__wrapper'
 				sx={{
 					mb: {

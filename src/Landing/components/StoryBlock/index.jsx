@@ -1,14 +1,14 @@
 import Parallax from "react-rellax";
 
 import { Box, Typography } from "@mui/material";
-import ellipse from "../../decoration/ellipse.svg";
+import ellipse from "../../assets/ellipse.svg";
 import cat from "./img/cat.jpg";
 import catSm from "./img/cat-sm.jpg";
 
 const Story = () => {
 	return (
 		<>
-			<Box>
+			<Box id="story-section">
 				<div className='story__wrapper'>
 					<div
 						className='story__item'
