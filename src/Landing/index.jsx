@@ -12,7 +12,9 @@ import "./index.scss";
 
 const Landing = () => {
 	useEffect(() => {
-		AOS.init();
+		AOS.init({
+			easing: "custom",
+		});
 	}, []);
 	return (
 		<>

@@ -1,8 +1,10 @@
 export { default as Main } from "./Main";
 export { default as Header } from "./Header";
+export { default as Hero } from "./Hero";
 export { default as Story } from "./StoryBlock";
 export { default as Quote } from "./QuoteBlock";
-export { default as Features } from "./Features";
+export { default as Token } from "./Token";
+export { default as Steps } from "./Steps";
 export { default as Invite } from "./Invite";
 export { default as Swap } from "./Swap";
 export { default as Tokenomics } from "./Tokenomics";

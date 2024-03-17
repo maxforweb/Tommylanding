@@ -1,88 +1,68 @@
-import Parallax from "react-rellax";
-
-import { Box, Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import ellipse from "../../assets/ellipse.svg";
-import cat from "./img/cat.jpg";
-import catSm from "./img/cat-sm.jpg";
+
+import cat1 from "../../assets/story/cat1.png";
+import cat2 from "../../assets/story/cat2.png";
+import cat3 from "../../assets/story/cat3.png";
+import SocialLink from "../SocialLink";
 
 const Story = () => {
 	return (
-		<>
-			<Box id="story-section">
-				<div className='story__wrapper'>
-					<div
-						className='story__item'
-						data-aos='fade-right'>
-						<Box>
-							<Typography
-								variant='h2'
-								sx={{ position: "relative" }}>
-								<Parallax speed={-3}>
-									<img
-										className='dec dec-ellipse'
-										src={ellipse}
-									/>
-								</Parallax>
-								The Story
-							</Typography>
-							<Typography
-								variant='body2'
-								sx={{ mt: "45px", textIndent: "25px" }}>
-								On a cold, dark evening, Raj, the founder of Solana, discovered a
-								shivering, homeless cat under a cardboard box during a walk with his
-								dog, Myro.
-							</Typography>
-							<Typography
-								variant='body2'
-								sx={{ textIndent: "25px" }}>
-								Guided by his profound love for animals, Raj took the cat home,
-								naming him Tom, and provided care, warmth, and toys, showcasing his
-								affection.
-							</Typography>
-							<Typography
-								variant='body2'
-								sx={{ textIndent: "25px" }}>
-								As Solana grew, Tom, always by Raj's side during work and Zoom
-								calls, became a beloved mascot of the innovative Solana community.
-							</Typography>
-							<Typography
-								variant='body2'
-								sx={{ textIndent: "25px" }}>
-								Inspired by Tom's presence, the community launched "Tom The Cat
-								Token" and a game, allowing users to engage with Tom virtually while
-								supporting homeless cats.
-							</Typography>
-							<Typography
-								variant='body2'
-								sx={{ textIndent: "25px" }}>
-								This initiative not only celebrated Tom but also reflected the
-								community's commitment to animal welfare, turning Raj's rescue of
-								Tom into a global mission to help animals in need through the
-								strength of the Solana community.
-							</Typography>
-						</Box>
-					</div>
-					<div
-						className='story__item'
-						data-aos='fade-left'>
-						<picture>
-							<source
-								media='(min-width: 1024px)'
-								srcSet={cat}
-							/>
-							<source
-								media='(max-width: 1023.98px)'
-								srcSet={catSm}
-							/>
+		<section id="story-section">
+			<div className='story__wrapper'>
+				<Container>
+					<div className="story__row">
+						<div className="story__col story__col-text">
+							<div className="story__col-text-wrap">
+								<Typography variant="h2" className="story__title" mb={5}>The Story</Typography>
+								<Typography variant="body2" className="story__text" mb={3}>On a cold, dark evening, Raj, the founder of Solana, discovered a shivering, homeless cat under a cardboard box during a walk with his dog, Myro.</Typography>
+								<Typography variant="body2" className="story__text">Moved by the sight and guided by his love for animals, Raj took the cat home, naming him Tom, and provided care, warmth, and toys, showcasing his affection.</Typography>
+							</div>
+						</div>
+						<div className="story__col story__col-img">
 							<img
-								src={cat}
-								alt=''
+								src={cat1}
+								alt="Tim The cat"
+								loading="lazy"
 							/>
-						</picture>
+						</div>
+						<div className="story__col story__col-img">
+							<img
+								src={cat2}
+								alt="Tim The cat"
+								loading="lazy"
+							/>
+						</div>
+						<div className="story__col story__col-text">
+							<div className="story__col-text-wrap">
+								<Typography variant="body2" className="story__text">
+									As Solana grew, Tim, always by Raj's side during work calls, became a beloved mascot of the Solana community.his dog, Myro.
+								</Typography>
+								<ul>
+									<li><SocialLink href="#" text="X" /></li>
+									<li><SocialLink href="#" text="TG" /></li>
+								</ul>
+								<Typography variant="body2" className="story__text">To celebrate Tim, the Solana community launched "Tim The Cat Token" and a game!</Typography>
+							</div>
+						</div>
+						<div className="story__col story__col-text">
+							<div className="story__col-text-wrap">
+								<Typography variant="body2" className="story__text" mb={3}>Just as Raj did when he rescued and cared for Tom, within the game, players can take care of their Tom by petting, feeding, grooming, and accessorizing, just as Raj did when he rescued and cared for Tom!</Typography>
+								<Typography variant="body2" className="story__text">
+									In addition to taking care of your Tom, you'll also earn rewards for completing quests, forming partnerships, and engaging in many other exciting activities within the game!</Typography>
+							</div>
+						</div>
+						<div className="story__col story__col-img">
+							<img
+								src={cat3}
+								alt="Tim The cat"
+								loading="lazy"
+							/>
+						</div>
 					</div>
-				</div>
-			</Box>
-		</>
+				</Container>
+			</div>
+		</section>
 	);
 };
 

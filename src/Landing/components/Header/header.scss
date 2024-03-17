@@ -6,6 +6,10 @@
   z-index: 100;
   transition: top 0.3s ease;
 
+  img {
+    max-width: 100%;
+  }
+
   &::before {
     content: '';
     position: absolute;
@@ -151,6 +155,7 @@
     }
     .header__logo {
       margin-right: auto;
+      max-width: 150px;
     }
     .header__nav {
       position: absolute;
@@ -217,14 +222,24 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 575px) {
   .header {
-    top: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    &::after {
+      opacity: 0.1;
+    }
     &.header--scroll {
       top: 0;
+      background-color: rgba(0, 0, 0, 0.1);
+      &::after {
+        opacity: 0.1;
+      }
+    }
+    .header__nav {
+      top: 100%;
     }
     .header__wrapper {
-      padding: 7px 0;
+      padding: 10px 0;
     }
     .header__socials {
       display: none;
@@ -242,3 +257,4 @@
     transform: translateY(0);
   }
 }
+

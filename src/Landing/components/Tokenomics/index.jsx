@@ -1,5 +1,3 @@
-import Parallax from "react-rellax";
-
 import DefaultContainer from "../default/Container";
 import TokenomicsBox from "./TokenomicsBox";
 
@@ -25,30 +23,22 @@ const Tokenomics = () => {
 						lg: "180px",
 					},
 				}}>
-				<Parallax speed={0.7}>
-					<img
-						className='dec dec-star'
-						src={star}
-					/>
-				</Parallax>
-				<Parallax speed={0.5}>
-					<img
-						className='dec dec-coin-lg'
-						src={coinLg}
-					/>
-				</Parallax>
-				<Parallax speed={-1}>
-					<img
-						className='dec dec-coin-lg-op'
-						src={coinLgOpacity}
-					/>
-				</Parallax>
-				<Parallax speed={1}>
-					<img
-						className='dec dec-coin-sm'
-						src={coinSm}
-					/>
-				</Parallax>
+				<img
+					className='dec dec-star'
+					src={star}
+				/>
+				<img
+					className='dec dec-coin-lg'
+					src={coinLg}
+				/>
+				<img
+					className='dec dec-coin-lg-op'
+					src={coinLgOpacity}
+				/>
+				<img
+					className='dec dec-coin-sm'
+					src={coinSm}
+				/>
 				<Typography
 					variant='h2'
 					textAlign='center'

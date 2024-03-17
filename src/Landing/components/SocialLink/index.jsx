@@ -1,7 +1,6 @@
 import { Link } from "@mui/material";
-import "./btn.scss";
 
-const SocialLink = ({ href, text }) => {
+const SocialLink = ({ href, text, width }) => {
   return (
     <Link href={href}
       sx={{
@@ -18,7 +17,7 @@ const SocialLink = ({ href, text }) => {
         borderRadius: "50%",
         textDecoration: "none",
         "&:hover": {
-          backgroundColor: "#292F4F",
+          backgroundColor: "var(--accent-purple-clr)",
         },
       }}
     >

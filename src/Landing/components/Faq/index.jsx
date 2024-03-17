@@ -1,5 +1,3 @@
-import Parallax from "react-rellax";
-
 import { Box, Typography } from "@mui/material";
 
 import FaqAccordion from "./Accordion";
@@ -18,12 +16,10 @@ const Faq = () => {
 					className='dec dec-star'
 					src={star}
 				/>
-				<Parallax speed={-1}>
-					<img
-						className='dec dec-ellipse'
-						src={ellipse}
-					/>
-				</Parallax>
+				<img
+					className='dec dec-ellipse'
+					src={ellipse}
+				/>
 				<Typography
 					variant='h2'
 					textAlign='center'

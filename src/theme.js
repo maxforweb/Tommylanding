@@ -3,13 +3,18 @@ export const theme = createTheme({
   typography: {
     fontFamily: "Grandstander",
     h2: {
-      fontSize: 60,
+      fontSize: 'clamp(2.5rem, 7vw, 3.75rem)',
       fontWeight: 700,
-      lineHeight: '60px'
+      lineHeight: 1,
     },
     h3: {
       fontSize: 35,
       fontWeight: 700,
+      color: "#fff"
+    },
+    h4: {
+      fontSize: 'clamp(1.2rem, 4vw, 1.75rem)',
+      fontWeight: 600,
       color: "#fff"
     },
     body2: {

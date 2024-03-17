@@ -1,0 +1,23 @@
+@keyframes fillProgress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 65%;
+  }
+}
+
+.header__actions-progress-bar-fill {
+  animation: fillProgress 2.4s forwards;
+}
+
+/* Eclipse */
+
+// position: absolute;
+// width: 987px;
+// height: 958px;
+// left: calc(50% - 987px/2 + 18.5px);
+// top: 0px;
+
+// background: linear-gradient(180deg, rgba(0, 194, 255, 0) 0%, #FF29C3 100%);
+// filter: blur(100px);

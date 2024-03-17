@@ -7,7 +7,7 @@ const DefaultContainer = ({ children, padding }) => {
 				width: { md: "95%", xs: "100%" },
 				padding: padding || { lg: "0 8.125rem", md: "0 50px", xs: "0 20px" },
 			}}
-			maxWidth='xl'
+			maxWidth='1536px'
 			disableGutters>
 			{children}
 		</Container>

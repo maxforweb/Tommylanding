@@ -1,9 +1,11 @@
 import { Container } from "@mui/material";
 import {
+  Hero,
   Quote,
-  Features,
+  Token,
   Story,
   Tokenomics,
+  Steps,
 } from "../../components";
 
 const Main = () => {
@@ -12,8 +14,10 @@ const Main = () => {
       <Container
         maxWidth='100%'
         disableGutters>
+        <Hero />
         <Story />
-        <Features />
+        <Token />
+        <Steps />
         <Tokenomics />
         <Quote />
       </Container>
