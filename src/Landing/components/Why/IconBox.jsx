@@ -7,6 +7,7 @@ const IconBox = ({ icon, animation, children }) => {
 			<img
 				className='why-box__icon'
 				src={icon}
+				alt="icon"
 			/>
 			<Typography variant='h5'>{children}</Typography>
 		</Box>

@@ -10,7 +10,7 @@ const Step = ({ title, subtitle, items, children, animationDelay }) => {
       <picture>
         <source srcSet={stepArrowSm} media="(max-width: 480px)" />
         <source srcSet={stepArrow} media="(min-width: 480.98px)" />
-        <img className="steps__arrow" src={stepArrow} />
+        <img className="steps__arrow" src={stepArrow} alt="arrow" />
       </picture>
       <Typography variant="h2" mb={{
         xs: '10px',

@@ -3,12 +3,13 @@
     width: 0%;
   }
   to {
-    width: 65%;
+    width: 100%;
   }
 }
 
 .header__actions-progress-bar-fill {
   animation: fillProgress 2.4s forwards;
+  animation-delay: 2000ms;
 }
 
 .header__actions-counter {

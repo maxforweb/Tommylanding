@@ -7,23 +7,31 @@ import {
 	Header,
 	Main,
 	Footer,
+	Preloader
 } from "./components";
 import "./index.scss";
 
 const Landing = () => {
+	const [preloaderLoaded, setPreloaderLoaded] = useState(false);
 
 	useEffect(() => {
+		const preloaderTimeout = setTimeout(() => {
+			setPreloaderLoaded(true);
+		}, 1500);
+
 		const timeout = setTimeout(() => {
 			AOS.init({
 				easing: "custom",
 			});
-		}, 10);
+		}, 2100);
 		return () => {
 			clearTimeout(timeout);
+			clearTimeout(preloaderTimeout);
 		};
 	}, []);
 	return (
 		<>
+			<Preloader loaded={preloaderLoaded} />
 			<Header />
 			<Main />
 			<Footer />

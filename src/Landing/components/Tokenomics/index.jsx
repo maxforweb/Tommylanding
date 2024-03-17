@@ -27,18 +27,22 @@ const Tokenomics = () => {
 					<img
 						className='dec dec-star'
 						src={star}
+						alt="star"
 					/>
 					<img
 						className='dec dec-coin-lg'
 						src={coinLg}
+						alt="coin"
 					/>
 					<img
 						className='dec dec-coin-lg-op'
 						src={coinLgOpacity}
+						alt="coin"
 					/>
 					<img
 						className='dec dec-coin-sm'
 						src={coinSm}
+						alt="coin"
 					/>
 					<Typography
 						variant='h2'

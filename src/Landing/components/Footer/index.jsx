@@ -9,7 +9,7 @@ import catGold from "../../assets/gold-cat.png";
 const Footer = () => {
 	return (
 		<Box>
-			<Box className="footer-gold-cat" sx={{
+			<Box className="footer-gold-cat" data-aos="bounce" sx={{
 				display: "flex",
 				justifyContent: "center",
 			}}>
@@ -93,7 +93,7 @@ const Footer = () => {
 							<Typography
 								variant='body2'
 								sx={{ fontWeight: "400", opacity: "0.7" }}>
-								© 2024 Crypto Tom • All Rights Reserved
+								© 2024 Crypto Tim • All Rights Reserved
 							</Typography>
 						</Box>
 					</Box>

@@ -38,6 +38,7 @@ const Token = () => {
 							src={gov}
 							width={50}
 							height={50}
+							alt="gov"
 						/>
 						<Typography
 							variant='h4'
@@ -58,6 +59,7 @@ const Token = () => {
 							src={stak}
 							width={50}
 							height={50}
+							alt="stak"
 						/>
 						<Typography
 							variant='h4'
@@ -77,6 +79,7 @@ const Token = () => {
 							src={lock}
 							width={50}
 							height={50}
+							alt="lock"
 						/>
 						<Typography
 							variant='h4'
@@ -96,6 +99,7 @@ const Token = () => {
 							src={charity}
 							width={50}
 							height={50}
+							alt="charity"
 						/>
 						<Typography
 							variant='h4'
@@ -115,6 +119,7 @@ const Token = () => {
 							src={star}
 							width={50}
 							height={50}
+							alt="star"
 						/>
 						<Typography
 							variant='h4'

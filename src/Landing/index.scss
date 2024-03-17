@@ -49,21 +49,34 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
+  height: 100svh;
   background-color: var(--accent-purple-clr);
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: opacity 1s ease-out, visibility 0s 1s;
+  transition: opacity 1s ease-out, visibility 0s 1s, transform 1s ease-in-out;
   opacity: 1;
   visibility: visible;
   z-index: 101;
+  overflow: hidden;
+  transform-origin: center center;
+
+  img {
+    animation-name: pulse;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    max-width: 200px;
+    width: 100%;
+  }
 }
 
 .preloader.loaded {
   opacity: 0;
   visibility: hidden;
+  transform: scale(1.5);
 }
 
 

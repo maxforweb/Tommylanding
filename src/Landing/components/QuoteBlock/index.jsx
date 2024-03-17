@@ -33,7 +33,7 @@ const Quote = () => {
 						pr: { md: "40px" },
 						mb: { xs: "40px", md: "0" },
 					}}>
-					<img src={quote} />
+					<img src={quote} alt="quote" />
 				</Grid>
 				<Grid
 					item

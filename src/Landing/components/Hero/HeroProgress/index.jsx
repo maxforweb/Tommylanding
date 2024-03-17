@@ -11,14 +11,16 @@ const HeroProgress = () => {
   useEffect(() => {
     const startTime = performance.now();
     const duration = 2000;
-    const endValue = 875;
+    const endValue = 1000;
 
     const animate = (currentTime) => {
       const elapsedTime = currentTime - startTime;
       const progress = Math.min(elapsedTime / duration, 1)
       const currentValue = Math.round(endValue * progress);
 
-      setCounter(currentValue);
+      setTimeout(() => {
+        setCounter(currentValue);
+      }, 2000);
 
       if (progress < 1) {
         requestAnimationFrame(animate);

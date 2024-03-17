@@ -1,4 +1,5 @@
 import { Container, Typography, Box } from "@mui/material";
+import { motion } from "framer-motion"
 import "./hero.scss";
 
 import HeroProgress from "./HeroProgress";
@@ -45,8 +46,25 @@ const Hero = () => {
               </span>
             </a>
           </div>
-          <div className="hero__body-cat">
-            <div className="hero__body-decoration">
+          <div className="hero__body-cat" style={{
+            transformStyle: "preserve-3d"
+          }}>
+            <motion.div
+              initial={{
+                y: 7,
+                rotate: 0
+              }}
+              animate={{
+                y: [0, -30, 0],
+                rotate: [0, 2, -4, 0],
+              }}
+              transition={{
+                duration: 5,
+                repeat: Infinity,
+                repeatType: "mirror",
+                ease: "easeInOut"
+              }}
+              className="hero__body-decoration">
               <Typography variant="body2" textAlign={'center'} fontSize={16} lineHeight={1.3} data-aos="bounce" sx={{
                 display: "flex",
                 alignItems: "center",
@@ -56,7 +74,7 @@ const Hero = () => {
                 <img src={heroIcon1} alt="icon" />
                 Pet the Cat
               </Typography>
-            </div>
+            </motion.div>
             <div className="hero__body-img-main" data-aos="bounce">
               <picture>
                 <source srcSet={catWebPSm} media="(max-width: 1024px)" />
@@ -64,21 +82,58 @@ const Hero = () => {
                 <img src={catWebP} alt="cat" />
               </picture>
             </div>
-            <div className="hero__body-decoration">
-              <Typography variant="body2" textAlign={'center'} fontSize={16} lineHeight={1} mb={7} data-aos="bounce">
-                <span className='coming-soon__label'>Сonvert to Tokens - Coming Soon</span>
-                <img src={heroIcon2} alt="icon" />
-                Earn Points
-              </Typography>
-              <Typography variant="body2" textAlign={'center'} fontSize={16} lineHeight={1.3} data-aos="bounce" sx={{
-                display: "flex",
-                alignItems: "center",
-                gap: "10px",
-                flexDirection: "column"
-              }}>
-                <img src={heroIcon3} alt="icon" />
-                Reffer Your Friends
-              </Typography>
+            <div className="hero__body-decoration" style={{
+              trransformStyle: "preserve-3d"
+            }}>
+              <motion.div
+                initial={{
+                  y: 10,
+                  rotate: 0
+                }}
+                animate={{
+                  y: [0, -15, 0],
+                  rotate: [0, -3, 1, 0],
+                }}
+                transition={{
+                  duration: 6,
+                  repeat: Infinity,
+                  repeatType: "mirror",
+                  ease: "easeInOut"
+                }}
+              >
+                <Typography variant="body2" textAlign={'center'} fontSize={16} lineHeight={1} mb={7} data-aos="bounce">
+                  <span className='coming-soon__label'>Сonvert to Tokens - Coming Soon</span>
+                  <img src={heroIcon2} alt="icon" />
+                  Earn Points
+                </Typography>
+              </motion.div>
+              <motion.div
+                initial={{
+                  y: 0,
+                  rotate: 0
+                }}
+                animate={{
+                  y: [0, 30, 0],
+                  rotate: [0, 2, -2, 0],
+                }}
+                transition={{
+                  duration: 7,
+                  repeat: Infinity,
+                  repeatType: "mirror",
+                  ease: "easeInOut"
+                }}
+              >
+
+                <Typography variant="body2" textAlign={'center'} fontSize={16} lineHeight={1.3} data-aos="bounce" sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "10px",
+                  flexDirection: "column"
+                }}>
+                  <img src={heroIcon3} alt="icon" />
+                  Reffer Your Friends
+                </Typography>
+              </motion.div>
             </div>
           </div>
         </Box>
