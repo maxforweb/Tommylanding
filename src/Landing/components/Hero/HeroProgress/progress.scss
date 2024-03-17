@@ -11,13 +11,19 @@
   animation: fillProgress 2.4s forwards;
 }
 
-/* Eclipse */
+.header__actions-counter {
+  img {
+    @media (max-width: 1024px) {
+      width: 18px;
+      height: 18px;
+    }
+  }
 
-// position: absolute;
-// width: 987px;
-// height: 958px;
-// left: calc(50% - 987px/2 + 18.5px);
-// top: 0px;
-
-// background: linear-gradient(180deg, rgba(0, 194, 255, 0) 0%, #FF29C3 100%);
-// filter: blur(100px);
+  span {
+    display: block;
+    min-width: 45px;
+    @media (max-width: 1024px) {
+      min-width: 30px;
+    }
+  }
+}

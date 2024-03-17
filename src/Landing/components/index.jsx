@@ -9,3 +9,4 @@ export { default as Steps } from "./Steps";
 export { default as Tokenomics } from "./Tokenomics";
 export { default as Why } from "./Why";
 export { default as Footer } from "./Footer";
+export { default as Preloader } from "./Preloader";

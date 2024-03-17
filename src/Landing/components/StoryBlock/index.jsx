@@ -12,8 +12,9 @@ const Story = () => {
 			<div className='story__wrapper'>
 				<Container>
 					<div className="story__row">
-						<div className="story__col story__col-text" data-aos="fade-right" data-aos-offset="200">
+						<div className="story__col story__col-text" data-aos="fade-right" data-aos-offset="-200">
 							<div className="story__col-text-wrap">
+								<img src={ellipse} className="dec" />
 								<Typography variant="h2" className="story__title" mb={5}>The Story</Typography>
 								<Typography variant="body2" className="story__text" mb={3}>On a cold, dark evening, Raj, the founder of Solana, discovered a shivering, homeless cat under a cardboard box during a walk with his dog, Myro.</Typography>
 								<Typography variant="body2" className="story__text">Moved by the sight and guided by his love for animals, Raj took the cat home, naming him Tom, and provided care, warmth, and toys, showcasing his affection.</Typography>

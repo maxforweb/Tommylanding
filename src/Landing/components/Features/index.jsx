@@ -48,7 +48,7 @@ const Features = () => {
             justifyContent: "center",
             alignItems: "center",
           }}>
-            <img src={iphone} alt="iphone" />
+            <img className="features__phone" src={iphone} alt="iphone" />
             <a className="btn btn-sm" href="#">
               Telegram bot!
               <span className="btn__icon">

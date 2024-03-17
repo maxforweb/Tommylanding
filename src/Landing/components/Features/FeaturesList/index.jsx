@@ -19,14 +19,15 @@ const FeaturesList = () => {
           md: "25px"
         },
         maxWidth: {
-          _: '100%', // Default
+          xs: '100%', // Default
           md: '700px', // Medium breakpoint
         },
+
       }}>
         <img src={console} alt="icon" />
         <Box>
           <Typography variant='body1' sx={{
-            fontSize: 26,
+            fontSize: 'clamp(1.15rem, 2vw, 1.7rem)',
             fontWeight: 600,
             mb: "10px"
           }}>Easy to Play</Typography>
@@ -42,14 +43,15 @@ const FeaturesList = () => {
           md: "25px"
         },
         maxWidth: {
-          _: '100%', // Default
+          xs: '100%', // Default
           md: '700px', // Medium breakpoint
         },
+
       }}>
         <img src={people} alt="icon" />
         <Box>
           <Typography variant='body1' sx={{
-            fontSize: 26,
+            fontSize: 'clamp(1.15rem, 2vw, 1.7rem)',
             fontWeight: 600,
           }}>Referral program and community</Typography>
           <Typography variant='body2'>Join the game with your friends and get boosts and bonuses to accelerate your points growth, so you'll get your first NFTs in the shortest time</Typography>
@@ -64,14 +66,15 @@ const FeaturesList = () => {
           md: "25px"
         },
         maxWidth: {
-          _: '100%', // Default
+          xs: '100%', // Default
           md: '700px', // Medium breakpoint
         },
+
       }}>
         <img src={list} alt="icon" />
         <Box>
           <Typography variant='body1' sx={{
-            fontSize: 26,
+            fontSize: 'clamp(1.15rem, 2vw, 1.7rem)',
             fontWeight: 600,
           }}>Quests and tasks</Typography>
           <Typography variant='body2'>Want to get the unique features for your Tom? Go through quests from us and acquire unique clothes and accessories, boosts and bonuses!</Typography>
@@ -86,21 +89,22 @@ const FeaturesList = () => {
           md: "25px"
         },
         maxWidth: {
-          _: '100%', // Default
-          lg: '700px', // Medium breakpoint
+          xs: '100%', // Default
+          md: '700px', // Medium breakpoint
         },
       }}>
         <img src={coin} alt="icon" />
         <Box>
-          <Typography variant='body1' sx={{
-            fontSize: 26,
+          <Typography variant='body1' gap={'10px'} sx={{
+            fontSize: 'clamp(1.15rem, 2vw, 1.7rem)',
             fontWeight: 600,
             mb: "10px",
             display: 'flex',
-            alignItems: 'flex-start',
+            alignItems: 'center',
+            flexWrap: 'wrap',
           }}>
             Mint NFT
-            <span className='features__label'>Coming Soon</span>
+            <span className='coming-soon__label'>Coming Soon</span>
           </Typography>
           <Typography variant='body2'>Use your points to purchase unique features for your Tom and mint your individual NFT.</Typography>
         </Box>
@@ -114,21 +118,24 @@ const FeaturesList = () => {
           md: "25px"
         },
         maxWidth: {
-          _: '100%', // Default
+          xs: '100%', // Default
           md: '700px', // Medium breakpoint
         },
+
       }}>
         <img src={star} alt="icon" />
         <Box>
-          <Typography variant='body1' sx={{
-            fontSize: 26,
+          <Typography variant='body1' gap={'10px'} sx={{
+            fontSize: 'clamp(1.15rem, 2vw, 1.7rem)',
             fontWeight: 600,
             mb: "10px",
             display: 'flex',
-            alignItems: 'flex-start',
+            alignItems: 'center',
+            maxWidth: 'max-content',
+            flexWrap: 'wrap',
           }}>
             Collections and accessories from partners
-            <span className='features__label'>Coming Soon</span>
+            <span className='coming-soon__label'>Coming Soon</span>
           </Typography>
           <Typography variant='body2'>Let's have fun all together - soon we'll announce which meme-coins also decided to help Tom and collaborate with us.</Typography>
         </Box>

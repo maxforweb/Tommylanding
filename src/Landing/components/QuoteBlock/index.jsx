@@ -16,7 +16,10 @@ const Quote = () => {
 					p: { md: "50px 90px", xs: "20px 30px" },
 					border: "3px solid #fff",
 					borderRadius: "30px",
-					width: "90%",
+					width: {
+						xs: "100%",
+						md: "90%",
+					},
 					bgcolor: "rgba(0, 0, 0, 0.6)",
 				}}>
 				<Grid

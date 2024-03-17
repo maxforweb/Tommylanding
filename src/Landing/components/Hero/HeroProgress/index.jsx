@@ -32,19 +32,26 @@ const HeroProgress = () => {
     <Box className="header__actions-progress" sx={{
       maxWidth: "285px",
     }}>
-      <Box className="header__actions-counter" sx={{
+      <Box className="header__actions-counter" data-aos="bounce" sx={{
         display: "flex",
         alignItems: "center",
         gap: "12px",
       }}>
         <img src={catIcon} alt="cat" width={31} height={24} />
-        <Typography variant="body2" fontWeight={600} fontSize={22} sx={{
+        <Typography variant="body2" fontWeight={600} sx={{
           display: "flex",
+          fontSize: {
+            xs: "14px",
+            md: "22px"
+          },
         }}>
-          <span style={{ display: "block", minWidth: "45px" }}>{counter}</span> / 1000
+          <span>{counter}</span> / 1000
         </Typography>
       </Box>
-      <Box className="header__actions-progress-bar" mt={2} sx={{
+      <Box className="header__actions-progress-bar" data-aos="bounce" data-aos-offset="-300" mt={{
+        xs: 1,
+        md: 2
+      }} sx={{
         position: "relative",
         width: "100%",
         height: 15,
@@ -63,7 +70,7 @@ const HeroProgress = () => {
           background: "linear-gradient(90deg, rgba(222,202,255,1) 0%, rgba(105,30,226,1) 100%)",
         }} />
       </Box>
-      <Box className="hero__actions-progress-text">
+      <Box className="hero__actions-progress-text" data-aos="bounce" data-aos-offset="-300">
         <Typography variant="body2" fontWeight={500} fontSize={16} maxWidth={200} mt={2}>The happier The Tim — The more you get</Typography>
       </Box>
     </Box >

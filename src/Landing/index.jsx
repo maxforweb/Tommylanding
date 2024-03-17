@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -11,10 +11,16 @@ import {
 import "./index.scss";
 
 const Landing = () => {
+
 	useEffect(() => {
-		AOS.init({
-			easing: "custom",
-		});
+		const timeout = setTimeout(() => {
+			AOS.init({
+				easing: "custom",
+			});
+		}, 10);
+		return () => {
+			clearTimeout(timeout);
+		};
 	}, []);
 	return (
 		<>

@@ -2,11 +2,16 @@ import { Box, Typography } from "@mui/material";
 
 import paw from "../../../assets/paw.svg";
 import stepArrow from "../../../assets/step-arrow.svg";
+import stepArrowSm from "../../../assets/step-arrow-sm.svg";
 
 const Step = ({ title, subtitle, items, children, animationDelay }) => {
   return (
     <Box className="steps__col" data-aos="fade-up" data-aos-delay={animationDelay}>
-      <img className="steps__arrow" src={stepArrow} />
+      <picture>
+        <source srcSet={stepArrowSm} media="(max-width: 480px)" />
+        <source srcSet={stepArrow} media="(min-width: 480.98px)" />
+        <img className="steps__arrow" src={stepArrow} />
+      </picture>
       <Typography variant="h2" mb={{
         xs: '10px',
         sm: '20px',
