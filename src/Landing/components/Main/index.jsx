@@ -6,6 +6,7 @@ import {
   Story,
   Tokenomics,
   Steps,
+  Features,
 } from "../../components";
 
 const Main = () => {
@@ -16,6 +17,7 @@ const Main = () => {
         disableGutters>
         <Hero />
         <Story />
+        <Features />
         <Token />
         <Steps />
         <Tokenomics />

@@ -3,28 +3,34 @@
   --_hero-padding-bot: 50px;
   position: relative;
 
+  &::before {
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    height: 150%;
+    width: 150%;
+    transform: translate(-50%, -50%);
+    background-image: url("data:image/svg+xml,%3Csvg width='1387' height='1358' viewBox='0 0 1387 1358' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_f_3200_512)'%3E%3Cellipse cx='693.5' cy='679' rx='493.5' ry='479' fill='url(%23paint0_linear_3200_512)'/%3E%3C/g%3E%3Cg filter='url(%23filter1_f_3200_512)'%3E%3Crect x='379' y='641' width='619' height='438' fill='url(%23paint1_linear_3200_512)'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_f_3200_512' x='0' y='0' width='1387' height='1358' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='100' result='effect1_foregroundBlur_3200_512'/%3E%3C/filter%3E%3Cfilter id='filter1_f_3200_512' x='179' y='441' width='1019' height='838' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='100' result='effect1_foregroundBlur_3200_512'/%3E%3C/filter%3E%3ClinearGradient id='paint0_linear_3200_512' x1='693.5' y1='200' x2='693.5' y2='1158' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%2300C2FF' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FF29C3'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear_3200_512' x1='688.5' y1='641' x2='688.5' y2='1079' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23184BFF' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23174AFF'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0.7;
+
+    @media (max-width: 1024px) {
+      width: 300%;
+      height: 300%;
+      background-size: cover;
+    }
+  }
+
   .hero__container {
     position: relative;
     > * {
       position: relative;
       z-index: 2;
-    }
-
-    &::before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      height: 100%;
-      width: 200%;
-      transform: translate(-50%, -50%);
-      background-image: url('../../assets/hero/hero-gradient.svg');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      filter: blur(100px);
-      opacity: 0.8;
-      z-index: 1;
     }
   }
 
@@ -124,20 +130,7 @@
   @media (max-width: 1024px) {
     --_hero-padding-top: 100px;
     --_hero-padding-bot: 40px;
-    background: linear-gradient(180deg, rgba(0,0,0,1) 40%, rgba(23,74,255,1) 100%);
-    .hero__container {
-      &::before {
-        // top: 0;
-        // left: 0;
-        height: 100%;
-        width: 100%;
-        border-radius: 0;
-        background: 
-        linear-gradient(180deg, rgba(0,194,255,1) 0%, rgba(237,52,199,1) 70%);
-        opacity: .3; 
-        // transform: translate(0, 0);
-      }
-    }
+    overflow: hidden;
 
     .hero__body {
       flex-direction: column;
@@ -194,45 +187,9 @@
   @media (max-width: 768px) {}
 
   @media (max-width: 575px) {
-    .hero__body-cat {
-    }
     .header__actions-progress {
       max-width: 100%;
     }
   }
 }
 
-
-
-// /* Group 3 */
-
-// position: absolute;
-// width: 987px;
-// height: 958px;
-// left: -228px;
-// top: -197px;
-
-
-
-// /* Eclipse */
-
-// position: absolute;
-// width: 987px;
-// height: 958px;
-// left: calc(50% - 987px/2 + 85.5px);
-// top: -197px;
-
-// background: linear-gradient(180deg, rgba(0, 194, 255, 0) 0%, #FF29C3 100%);
-// filter: blur(100px);
-
-
-// /* Rectangle 29 */
-
-// position: absolute;
-// width: 691.9px;
-// height: 541.67px;
-// left: -98.95px;
-// top: 170.25px;
-
-// background: linear-gradient(180deg, rgba(24, 75, 255, 0) 0%, #174AFF 100%);
-// filter: blur(100px);

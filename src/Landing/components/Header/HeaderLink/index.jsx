@@ -6,7 +6,7 @@ const HeaderLink = ({ text, target, onClick }) => {
     event.preventDefault();
     const section = document.querySelector(sectionId);
     if (section) {
-      const headerOffset = 40; // Additional offset + header height
+      const headerOffset = 20; // Additional offset + header height
       const headerHeight = document.querySelector('.header').clientHeight;
       const position = section.offsetTop - headerHeight - headerOffset;
 

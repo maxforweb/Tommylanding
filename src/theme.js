@@ -27,7 +27,13 @@ export const theme = createTheme({
       fontSize: 24,
       fontWeight: 500,
       lineHeight: '130%',
-      fontFamily: "WorkSans"
-    }
+    },
+    body3: {
+      fontSize: 'clamp(1.2rem, 4vw, 1.75rem)',
+      fontWeight: 500,
+      lineHeight: "130%",
+      color: '#fff',
+      display: 'block',
+    },
   },
 });

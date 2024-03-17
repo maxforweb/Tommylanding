@@ -21,7 +21,9 @@ const Token = () => {
 				<Typography
 					variant='h2'
 					textAlign='center'
-					width='100%'>
+					width='100%'
+					zIndex={3}
+					position={'relative'}>
 					Token Utility
 				</Typography>
 				<Box
