@@ -1,0 +1,29 @@
+.distribution-section {
+  --_cyan-clr: #13DBE8;
+  --_blue-clr: #00B2FF;
+  --_purple-clr: #6F02FB;
+  --_purple-lighter-clr: #904CFF;
+  --_pink-clr: #C09AFF;
+
+  padding-top: 100px;
+
+  .distribution-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 55px 35px;
+
+    @media (max-width: 1280px) {
+      gap: 50px 0;
+    }
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr;
+      gap: 0;
+      place-items: center;
+    }
+
+    @media (max-width: 480px) {
+      place-items: start;
+    }
+  }
+}

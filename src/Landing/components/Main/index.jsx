@@ -1,13 +1,14 @@
 import { Container } from "@mui/material";
 import {
   Hero,
-  Quote,
+  // Quote,
   Token,
   Story,
   Tokenomics,
   Steps,
   Features,
 } from "../../components";
+import Distribution from "../Distribution";
 
 const Main = () => {
   return (
@@ -21,7 +22,8 @@ const Main = () => {
         <Token />
         <Steps />
         <Tokenomics />
-        <Quote />
+        <Distribution />
+        {/* <Quote /> */}
       </Container>
     </main>
   );

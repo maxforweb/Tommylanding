@@ -1,6 +1,6 @@
 import DefaultContainer from "../default/Container";
 
-import { Box, Typography, Link } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 import logo from "../../assets/logo.svg";
 import catWebP from "../../assets/hero-cat.webp";
@@ -10,7 +10,12 @@ import SocialLink from "../SocialLink";
 
 const Footer = () => {
 	return (
-		<Box>
+		<Box sx={{
+			mt: {
+				xs: "0",
+				lg: "-100px",
+			},
+		}}>
 			<Box className="footer-gold-cat" sx={{
 				display: "flex",
 				justifyContent: "center",
@@ -20,6 +25,7 @@ const Footer = () => {
 					data-aos-offset="100"
 					src={catGold}
 					alt="Golden Cat"
+					loading="lazy"
 				/>
 			</Box>
 			<footer className='footer footer__wrapper'>
@@ -36,11 +42,12 @@ const Footer = () => {
 							<SocialLink href="#" text="TG" />
 						</Box>
 						<Box className='footer__text'>
-							<Typography variant='body2'>
-								With Tim The Cat, we have created a revolutionary digital currency that is designed for simplicity, security, and accessibility.
+							<Typography variant='body1' mb={2}>
+								Tim the Cat: the cutest advisers of Solana is waiting for you!
 							</Typography>
-							<Typography variant='body2'>
-								Our goal is to provide a seamless crypto experience for everyone. Whether you are an experienced trader or a curious beginner, Tim The Cat is here to meet your needs and assist you in exploring the world of digital currencies.
+							<Typography variant='body1'>
+
+								Play the games, help Tim and his friends and discover the first Tamagotchi game built on Solana
 							</Typography>
 						</Box>
 						<Box className='footer__cat'>

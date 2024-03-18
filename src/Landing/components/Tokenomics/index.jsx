@@ -1,5 +1,6 @@
 import DefaultContainer from "../default/Container";
 import TokenomicsBox from "./TokenomicsBox";
+import { motion } from "framer-motion"
 
 import { Box, Typography } from "@mui/material";
 
@@ -24,26 +25,96 @@ const Tokenomics = () => {
 							lg: "180px",
 						},
 					}}>
-					<img
+					<motion.div
+						initial={{
+							y: 10,
+							rotate: 0
+						}}
+						animate={{
+							y: [0, -15, 0],
+							rotate: [0, -3, 1, 0],
+						}}
+						transition={{
+							duration: 6,
+							repeat: Infinity,
+							repeatType: "mirror",
+							ease: "easeInOut"
+						}}
 						className='dec dec-star'
-						src={star}
-						alt="star"
-					/>
-					<img
+					>
+						<img
+							className='dec dec-star'
+							src={star}
+							alt="star"
+						/>
+					</motion.div>
+					<motion.div
+						initial={{
+							y: 0,
+							rotate: 0
+						}}
+						animate={{
+							y: [0, 30, 0],
+							rotate: [0, 2, -2, 0],
+						}}
+						transition={{
+							duration: 7,
+							repeat: Infinity,
+							repeatType: "mirror",
+							ease: "easeInOut"
+						}}
 						className='dec dec-coin-lg'
-						src={coinLg}
-						alt="coin"
-					/>
-					<img
-						className='dec dec-coin-lg-op'
-						src={coinLgOpacity}
-						alt="coin"
-					/>
-					<img
-						className='dec dec-coin-sm'
-						src={coinSm}
-						alt="coin"
-					/>
+					>
+						<img
+							className='dec dec-coin-lg'
+							src={coinLg}
+							alt="coin"
+						/>
+					</motion.div>
+					<motion.div
+						initial={{
+							y: 7,
+							rotate: 0
+						}}
+						animate={{
+							y: [0, -30, 0],
+							rotate: [0, 2, -4, 0],
+						}}
+						transition={{
+							duration: 5,
+							repeat: Infinity,
+							repeatType: "mirror",
+							ease: "easeInOut"
+						}}
+						className='dec dec-coin-lg-op'>
+						<img
+							className='dec dec-coin-lg-op'
+							src={coinLgOpacity}
+							alt="coin"
+						/>
+					</motion.div>
+					<motion.div
+						initial={{
+							y: 7,
+							rotate: 0
+						}}
+						animate={{
+							y: [0, -30, 0],
+							rotate: [0, 2, -4, 0],
+						}}
+						transition={{
+							duration: 5,
+							repeat: Infinity,
+							repeatType: "mirror",
+							ease: "easeInOut"
+						}}
+						className='dec dec-coin-sm'>
+						<img
+							className='dec dec-coin-sm'
+							src={coinSm}
+							alt="coin"
+						/>
+					</motion.div>
 					<Typography
 						variant='h2'
 						textAlign='center'
@@ -55,16 +126,9 @@ const Tokenomics = () => {
 					<Box className='tokenomics'>
 						<TokenomicsBox
 							title='Total Supply:'
-							value='1 000 000 000'
+							value='1 000 000 000 $TOMCAT'
 						/>
-						<TokenomicsBox
-							title='Tax:'
-							value='0%'
-						/>
-						<TokenomicsBox
-							title='Token address:'
-							value='HhJpBhRRn4g56VsyLuT8DL5Bv31HkXqsrahTTUCZeZg4'
-						/>
+
 					</Box>
 				</Box>
 			</DefaultContainer>
