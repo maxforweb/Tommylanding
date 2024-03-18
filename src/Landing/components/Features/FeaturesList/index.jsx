@@ -100,8 +100,11 @@ const FeaturesList = () => {
             fontWeight: 600,
             mb: "10px",
             display: 'flex',
-            alignItems: 'center',
-            flexWrap: 'wrap',
+            alignItems: 'flex-start',
+            flexDirection: {
+              xs: 'column',
+              sm: 'row',
+            },
           }}>
             Mint NFT
             <span className='coming-soon__label'>Coming Soon</span>
@@ -130,9 +133,12 @@ const FeaturesList = () => {
             fontWeight: 600,
             mb: "10px",
             display: 'flex',
-            alignItems: 'center',
+            flexDirection: {
+              xs: 'column',
+              sm: 'row',
+            },
+            alignItems: 'flex-start',
             maxWidth: 'max-content',
-            flexWrap: 'wrap',
           }}>
             Collections and accessories from partners
             <span className='coming-soon__label'>Coming Soon</span>

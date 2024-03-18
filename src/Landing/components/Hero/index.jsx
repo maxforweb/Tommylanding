@@ -39,12 +39,14 @@ const Hero = () => {
           </div>
           <div className="hero__actions">
             <HeroProgress />
-            <a className="btn" href="#" data-aos="bounce" data-aos-offset="-300">
-              Play now!
-              <span className="btn__icon">
-                <img src={arrowIcon} alt="arrow" />
-              </span>
-            </a>
+            <div data-aos="bounce" data-aos-offset="-300">
+              <a className="btn" href="#">
+                <span>Play now!</span>
+                <span className="btn__icon">
+                  <img src={arrowIcon} alt="arrow" />
+                </span>
+              </a>
+            </div>
           </div>
           <div className="hero__body-cat" style={{
             transformStyle: "preserve-3d"
@@ -102,7 +104,6 @@ const Hero = () => {
                 }}
               >
                 <Typography variant="body2" textAlign={'center'} fontSize={16} lineHeight={1} mb={7} data-aos="bounce">
-                  <span className='coming-soon__label'>Сonvert to Tokens - Coming Soon</span>
                   <img src={heroIcon2} alt="icon" />
                   Earn Points
                 </Typography>

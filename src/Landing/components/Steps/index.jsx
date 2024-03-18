@@ -19,7 +19,7 @@ const Steps = () => {
             animationDelay={100}
           >
             <a className="btn btn-sm" href="#">
-              Try now!
+              <span>Try now!</span>
               <span className="btn__icon">
                 <img src={arrowIcon} alt="arrow" />
               </span>

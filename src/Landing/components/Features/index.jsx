@@ -4,6 +4,7 @@ import FeaturesList from "./FeaturesList";
 import SocialLink from "../SocialLink";
 
 import iphone from "../../assets/features/iphone.png";
+import iphoneWebP from "../../assets/features/iphone.webp";
 import arrowIcon from "../../assets/arrow-circle.svg";
 import star from "../../assets/star.svg";
 
@@ -48,9 +49,12 @@ const Features = () => {
             justifyContent: "center",
             alignItems: "center",
           }}>
-            <img className="features__phone" src={iphone} alt="iphone" />
+            <picture>
+              <source srcSet={iphoneWebP} />
+              <img className="features__phone" src={iphone} alt="cat" />
+            </picture>
             <a className="btn btn-sm" href="#">
-              Telegram bot!
+              <span>Telegram bot!</span>
               <span className="btn__icon">
                 <img src={arrowIcon} alt="arrow" />
               </span>

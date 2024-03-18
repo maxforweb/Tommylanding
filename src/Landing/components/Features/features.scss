@@ -16,6 +16,15 @@
       max-width: 250px;
       width: 100%;
     }
+
+    .coming-soon__label {
+      height: 35px;
+      margin-top: -5px;
+
+      @media (max-width: 575px) {
+        margin-top: 0;
+      }
+    }
   }
 
   ul {

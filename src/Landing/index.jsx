@@ -23,7 +23,7 @@ const Landing = () => {
 			AOS.init({
 				easing: "custom",
 			});
-		}, 2100);
+		}, 2300);
 		return () => {
 			clearTimeout(timeout);
 			clearTimeout(preloaderTimeout);

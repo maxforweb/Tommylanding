@@ -5,15 +5,19 @@ import { Box, Typography, Link } from "@mui/material";
 import logo from "../../assets/logo.svg";
 import catWebP from "../../assets/hero-cat.webp";
 import catGold from "../../assets/gold-cat.png";
+import SocialLink from "../SocialLink";
+
 
 const Footer = () => {
 	return (
 		<Box>
-			<Box className="footer-gold-cat" data-aos="bounce" sx={{
+			<Box className="footer-gold-cat" sx={{
 				display: "flex",
 				justifyContent: "center",
 			}}>
 				<img
+					data-aos="bounce"
+					data-aos-offset="100"
 					src={catGold}
 					alt="Golden Cat"
 				/>
@@ -28,52 +32,8 @@ const Footer = () => {
 							/>
 						</Box>
 						<Box className='footer__socials'>
-							<Link
-								aria-label='copy'
-								color='primary'
-								href='#'
-								sx={{
-									transition: "background-color 0.3s",
-									width: "50px",
-									height: "50px",
-									display: "inline-flex",
-									alignItems: "center",
-									justifyContent: "center",
-									border: "2px solid #fff",
-									color: "#fff",
-									fontSize: "16px",
-									fontWeight: "600",
-									borderRadius: "50%",
-									textDecoration: "none",
-									"&:hover": {
-										backgroundColor: "#292F4F",
-									},
-								}}>
-								X
-							</Link>
-							<Link
-								aria-label='copy'
-								color='primary'
-								href='#'
-								sx={{
-									transition: "background-color 0.3s",
-									width: "50px",
-									height: "50px",
-									display: "inline-flex",
-									alignItems: "center",
-									justifyContent: "center",
-									border: "2px solid #fff",
-									color: "#fff",
-									fontSize: "16px",
-									fontWeight: "600",
-									borderRadius: "50%",
-									textDecoration: "none",
-									"&:hover": {
-										backgroundColor: "#292F4F",
-									},
-								}}>
-								TG
-							</Link>
+							<SocialLink href="#" text="X" />
+							<SocialLink href="#" text="TG" />
 						</Box>
 						<Box className='footer__text'>
 							<Typography variant='body2'>
