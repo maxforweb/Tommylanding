@@ -1,4 +1,4 @@
-import { Grid, Typography } from "@mui/material";
+import { Grid, Typography, Box } from "@mui/material";
 import DefaultContainer from "../default/Container";
 
 import quote from "./img/quote.png";
@@ -13,7 +13,7 @@ const Quote = () => {
 				sx={{
 					m: "0 auto",
 					mt: "36px",
-					p: { md: "50px 90px", xs: "20px 30px" },
+					p: { lg: "50px 90px", md: "35px", xs: "25px" },
 					border: "3px solid #fff",
 					borderRadius: "30px",
 					width: {
@@ -27,24 +27,39 @@ const Quote = () => {
 					md={2}
 					xs={12}
 					display='flex'
-					justifyContent={"end"}
+					justifyContent={{ xs: "start", md: "end" }}
 					alignItems={"end"}
 					sx={{
 						pr: { md: "40px" },
-						mb: { xs: "40px", md: "0" },
+						mb: { xs: "25px", md: "0" },
 					}}>
-					<img src={quote} alt="quote" />
+					<Box component="img" src={quote} alt="quote icon" sx={{
+						width: {
+							xs: "50px",
+							md: "70px",
+							lg: "90px",
+							xl: "110px"
+						},
+						height: {
+							xs: "50px",
+							md: "70px",
+							lg: "90px",
+							xl: "110px"
+						}
+					}} />
 				</Grid>
 				<Grid
 					item
 					md={10}
 					xs={12}>
-					<Typography variant='body1'>
+					<Typography variant='body1' sx={{
+						fontSize: "clamp(1.15rem, 2vw, 1.5rem)",
+					}}>
 						With Tim The Cat, we have created a revolutionary digital currency that is designed for simplicity, security, and accessibility.
 					</Typography>
 					<Typography
 						variant='body1'
-						sx={{ mt: "20px" }}>
+						sx={{ mt: "20px", fontSize: "clamp(1.15rem, 2vw, 1.5rem)", }}>
 						Our goal is to provide a seamless crypto experience for everyone. Whether you are an experienced trader or a curious beginner, Talking Tom is here to meet your needs and assist you in exploring the world of digital currencies.
 					</Typography>
 				</Grid>
