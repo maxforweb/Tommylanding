@@ -7,8 +7,8 @@ const HeaderLink = ({ text, target, onClick }) => {
     if (targetSection) {
       const targetPosition = targetSection.getBoundingClientRect().top;
       const startPosition = window.scrollY;
-      const headerHeight = document.querySelector('.header').clientHeight;
-      const offset = headerHeight + 20; // Header height + additional offset
+      // const headerHeight = document.querySelector('.header').clientHeight;
+      const offset = 40; // Header height + additional offset
       const distance = targetPosition - offset;
       let startTime = null;
 

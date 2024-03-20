@@ -54,7 +54,7 @@ const Features = () => {
               <img className="features__phone" src={iphone} alt="cat" />
             </picture>
             <a className="btn btn-sm" href="#">
-              <span>Telegram bot!</span>
+              <span>Start now!</span>
               <span className="btn__icon">
                 <img src={arrowIcon} alt="arrow" />
               </span>

@@ -8,20 +8,8 @@ import MenuButton from './MenuButton';
 import './header.scss';
 
 const Header = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isNavActive, setIsNavActive] = useState(false);
-  const headerRef = useRef();
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const offset = window.scrollY;
-      setIsScrolled(offset > 60);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  const headerRef = useRef()
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -48,7 +36,7 @@ const Header = () => {
   }
 
   return (
-    <header ref={headerRef} className={`header ${isScrolled ? 'header--scroll' : ''}`}>
+    <header ref={headerRef} className='header'>
       <Container>
         <Box className='header__wrapper'>
           <HeaderLogo />
