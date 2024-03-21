@@ -1,5 +1,4 @@
 import { Container, Typography } from "@mui/material";
-import { Image } from "mui-image";
 
 import cat1 from "../../assets/story/cat1.png";
 import cat1Webp from "../../assets/story/cat1.webp";
