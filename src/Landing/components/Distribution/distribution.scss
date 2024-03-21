@@ -8,26 +8,17 @@
 
   &::after {
     content: '';
-    width: 100%;
-    height: 100%;
-    // left: 50%;
-    // top: 50%;
-    top: 10%;
-    left: 0;
+    width: 1325px;
+    height: 800px;
+    left: 50%;
+    top: 60%;
     position: absolute;
-    // transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) translate3d(0, 0, 0);
     z-index: 1;
-    // background-size: contain;
-    // background-repeat: no-repeat;
-    // background-position: center center;
-    // background-image: url('../../assets/distribution/gradient.webp');
-    // background: linear-gradient(rgb(238, 41, 255), rgb(130, 32, 255), rgb(23, 33, 255));
-
     background: linear-gradient(180deg, rgb(238, 41, 255) 0%, rgb(130, 32, 255) 50%, rgb(23, 33, 255) 100%)
     center;
     filter: blur(100px);
-    border-radius: 100%;
-    // background-image: url("data:image/svg+xml,%3Csvg width='1440' height='1385' viewBox='0 0 1440 1385' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_f_3474_90)'%3E%3Cellipse cx='757.5' cy='692.5' rx='662.5' ry='492.5' fill='url(%23paint0_linear_3474_90)'/%3E%3C/g%3E%3Cg filter='url(%23filter1_f_3474_90)'%3E%3Crect x='268.241' y='457.369' width='928.846' height='676.56' fill='url(%23paint1_linear_3474_90)'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_f_3474_90' x='-105' y='0' width='1725' height='1385' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='100' result='effect1_foregroundBlur_3474_90'/%3E%3C/filter%3E%3Cfilter id='filter1_f_3474_90' x='68.2412' y='257.369' width='1328.85' height='1076.56' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='100' result='effect1_foregroundBlur_3474_90'/%3E%3C/filter%3E%3ClinearGradient id='paint0_linear_3474_90' x1='757.5' y1='200' x2='757.5' y2='1185' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%2300C2FF' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FF29C3'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear_3474_90' x1='732.664' y1='457.369' x2='732.664' y2='1133.93' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23184BFF' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23174AFF'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+    border-radius: 40%;
     opacity: 0.5;
   }
 

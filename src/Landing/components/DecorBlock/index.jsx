@@ -89,6 +89,8 @@ const icons = {
 		right: "100%",
 		width: "250px",
 		height: "168px",
+		widthMd: "150px",
+		heightMd: "100px",
 		animation: {
 			initial: { x: 0 },
 			animate: { x: [0, 320] },
@@ -98,9 +100,11 @@ const icons = {
 	ellipse: {
 		src: ellipse,
 		top: "-5%",
-		left: "-25%",
+		left: "-15%",
 		width: "168px",
 		height: "168px",
+		widthMd: "100px",
+		heightMd: "100px",
 		animation: {
 			initial: { rotate: 0 },
 			animate: { rotate: [0, 15] },
@@ -110,11 +114,12 @@ const icons = {
 	moon: {
 		src: moon,
 		top: "7%",
-		left: "-10%",
+		left: "-5%",
+		leftMd: "5%",
 		width: "113px",
 		height: "113px",
-		widthMd: "75px",
-		heightMd: "75px",
+		widthMd: "45px",
+		heightMd: "45px",
 		animation: {
 			initial: { y: 0, rotate: 0 },
 			animate: { y: [0, -30, 0], rotate: [0, 0] },
@@ -219,6 +224,8 @@ const icons = {
 		right: "0",
 		width: "75px",
 		height: "85px",
+		widthMd: "33px",
+		heightMd: "37px",
 		animation: {
 			initial: { y: 0 },
 			animate: { y: [0, -15, 0] },
@@ -231,6 +238,8 @@ const icons = {
 		right: "5%",
 		width: "60px",
 		height: "60px",
+		widthMd: "30px",
+		heightMd: "30px",
 		animation: {
 			initial: { opacity: 1 },
 			animate: { opacity: [1, 0.5, 1], y: [0, -15, 0], x: [0, 15, 0] },

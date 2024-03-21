@@ -21,6 +21,7 @@
     max-width: 230px;
     position: relative;
     padding-top: 80px;
+    z-index: 6;
     &:nth-child(1) {
       .steps__arrow {
         left: 50%;

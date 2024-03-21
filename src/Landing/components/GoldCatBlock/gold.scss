@@ -1,22 +1,26 @@
 .gold-cat {
+  padding-top: 100px;
   padding-bottom: 34px;
   position: relative;
+  @media (max-width: 1024px) {
+    padding-top: 60px;
+  }
   &::after {
     content: '';
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100vw;
-    height: 100%;
-    background: linear-gradient(180deg, rgba(238,41,255,1) 0%, rgba(23,74,255,1) 100%);
+    transform: translate(-50%, -50%) translate3d(0, 0, 0);
+    width: 1150px;
+    height: 750px;
+    background: linear-gradient(0deg, rgba(238,41,255,1) 0%, rgba(23,74,255,1) 100%);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     z-index: 1;
     opacity: 0.7;
     pointer-events: none;
-    border-radius: 100%;
+    border-radius: 40%;
     filter: blur(100px);
   }
 
