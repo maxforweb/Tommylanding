@@ -5,25 +5,30 @@ import stak from "./img/stak.svg";
 import lock from "./img/lock.svg";
 import charity from "./img/charity.svg";
 import star from "./img/favorites.svg";
+import DecorBlock from "../DecorBlock";
 
 const Token = () => {
 	return (
-		<Container>
-			<Box
-				id="token-section"
-				className='token__wrapper'
+		<Box
+			id='token-section'
+			className='token__wrapper'
+			sx={{
+				mb: {
+					xs: "70px",
+					lg: "170px",
+				},
+			}}>
+			<Container
 				sx={{
-					mb: {
-						xs: "70px",
-						lg: "170px",
-					},
+					position: "relative",
 				}}>
+				<DecorBlock iconName='ellipseFull' />
 				<Typography
 					variant='h2'
 					textAlign='center'
 					width='100%'
 					zIndex={3}
-					position={'relative'}>
+					position={"relative"}>
 					Token Utility
 				</Typography>
 				<Box
@@ -38,7 +43,7 @@ const Token = () => {
 							src={gov}
 							width={50}
 							height={50}
-							alt="gov"
+							alt='gov'
 						/>
 						<Typography
 							variant='h4'
@@ -49,7 +54,8 @@ const Token = () => {
 						<Typography
 							variant='body2'
 							sx={{ width: "100%", mt: "10px" }}>
-							The token can be used for voting on proposals related to the project's development, such as protocol upgrades or changes.
+							The token can be used for voting on proposals related to the project's
+							development, such as protocol upgrades or changes.
 						</Typography>
 					</Paper>
 					<Paper
@@ -59,7 +65,7 @@ const Token = () => {
 							src={stak}
 							width={50}
 							height={50}
-							alt="stak"
+							alt='stak'
 						/>
 						<Typography
 							variant='h4'
@@ -69,7 +75,8 @@ const Token = () => {
 						<Typography
 							variant='body2'
 							sx={{ width: "100%", mt: "10px" }}>
-							Holders of the tokens can stake their tokens to earn rewards, such as additional coins or access to special features.
+							Holders of the tokens can stake their tokens to earn rewards, such as
+							additional coins or access to special features.
 						</Typography>
 					</Paper>
 					<Paper
@@ -79,7 +86,7 @@ const Token = () => {
 							src={lock}
 							width={50}
 							height={50}
-							alt="lock"
+							alt='lock'
 						/>
 						<Typography
 							variant='h4'
@@ -89,7 +96,8 @@ const Token = () => {
 						<Typography
 							variant='body2'
 							sx={{ width: "100%", mt: "10px" }}>
-							Holding a certain amount of coins may grant users access to exclusive content, features, or events.
+							Holding a certain amount of coins may grant users access to exclusive
+							content, features, or events.
 						</Typography>
 					</Paper>
 					<Paper
@@ -99,7 +107,7 @@ const Token = () => {
 							src={charity}
 							width={50}
 							height={50}
-							alt="charity"
+							alt='charity'
 						/>
 						<Typography
 							variant='h4'
@@ -109,7 +117,8 @@ const Token = () => {
 						<Typography
 							variant='body2'
 							sx={{ width: "100%", mt: "10px" }}>
-							Memecoins can be used for charitable donations or as a means of tipping content creators and community members
+							Memecoins can be used for charitable donations or as a means of tipping
+							content creators and community members
 						</Typography>
 					</Paper>
 					<Paper
@@ -119,7 +128,7 @@ const Token = () => {
 							src={star}
 							width={50}
 							height={50}
-							alt="star"
+							alt='star'
 						/>
 						<Typography
 							variant='h4'
@@ -133,8 +142,8 @@ const Token = () => {
 						</Typography>
 					</Paper>
 				</Box>
-			</Box>
-		</Container>
+			</Container>
+		</Box>
 	);
 };
 

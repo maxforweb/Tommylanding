@@ -4,30 +4,28 @@ import { Box, Typography } from "@mui/material";
 
 import logo from "../../assets/logo.svg";
 import catWebP from "../../assets/hero-cat.webp";
-import catGold from "../../assets/gold-cat.png";
 import SocialLink from "../SocialLink";
-
+import DecorBlock from "../DecorBlock";
 
 const Footer = () => {
 	return (
-		<Box sx={{
-			mt: {
-				xs: "0",
-				lg: "-100px",
-			},
-		}}>
-			<Box className="footer-gold-cat" sx={{
-				display: "flex",
-				justifyContent: "center",
+		<Box
+			sx={{
+				mt: {
+					xs: "0",
+					lg: "-100px",
+				},
+				position: "relative",
 			}}>
-				<img
-					data-aos="bounce"
-					data-aos-offset="100"
-					src={catGold}
-					alt="Golden Cat"
-					loading="lazy"
-				/>
-			</Box>
+			<DecorBlock
+				iconName='ellipse'
+				customStyles={{
+					left: "-2%",
+					top: "-5%",
+					transform: "rotate(-90deg)",
+					opacity: 1,
+				}}
+			/>
 			<footer className='footer footer__wrapper'>
 				<DefaultContainer padding={{ xl: "0 8.125rem", lg: "0 5rem", xs: "0 20px" }}>
 					<Box className='footer__grid'>
@@ -38,16 +36,22 @@ const Footer = () => {
 							/>
 						</Box>
 						<Box className='footer__socials'>
-							<SocialLink href="#" text="X" />
-							<SocialLink href="#" text="TG" />
+							<SocialLink
+								href='#'
+								text='X'
+							/>
+							<SocialLink
+								href='#'
+								text='TG'
+							/>
 						</Box>
 						<Box className='footer__text'>
-							<Typography variant='body1' mb={2}>
-								Tim the Cat: the cutest advisers of Solana is waiting for you!
-							</Typography>
-							<Typography variant='body1'>
-
-								Play the games, help Tim and his friends and discover the first Tamagotchi game built on Solana
+							<Typography
+								variant='body1'
+								textAlign='center'
+								mb={2}>
+								The cutest virtual pet supported by Solana community is waiting for
+								you!
 							</Typography>
 						</Box>
 						<Box className='footer__cat'>
@@ -66,7 +70,7 @@ const Footer = () => {
 					</Box>
 				</DefaultContainer>
 			</footer>
-		</Box >
+		</Box>
 	);
 };
 

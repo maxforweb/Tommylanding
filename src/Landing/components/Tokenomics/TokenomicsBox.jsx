@@ -6,7 +6,8 @@ const TokenomicsBox = ({ title, value }) => {
 			className='tokenomics__item'
 			data-aos='zoom-in-down'>
 			<Typography
-				variant='h3'
+				variant='h4'
+				mb={1}
 				sx={{ fontWeight: "600" }}>
 				{title}
 			</Typography>

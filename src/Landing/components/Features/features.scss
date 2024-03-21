@@ -1,3 +1,15 @@
+.features-section {
+  padding-top: 100px;
+  position: relative;
+  > * {
+    position: relative;
+    z-index: 5;
+  }
+  @media (max-width: 1024px) {
+    padding-top: 60px;
+  }
+}
+
 .features__row {
   display: grid;
   grid-template-columns: 1fr 250px;
@@ -50,10 +62,10 @@
 
   .dec {
     right: -110px;
-    bottom: -150px;
+    bottom: -100px;
     z-index: 1;
-    width: 500px;
-    height: 500px;
+    width: 450px;
+    height: 450px;
     transform: rotate(10deg);
   }
 
