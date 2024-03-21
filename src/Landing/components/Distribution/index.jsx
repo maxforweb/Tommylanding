@@ -8,7 +8,7 @@ import DecorBlock from "../DecorBlock";
 
 const Distribution = () => {
 	return (
-		<section className='distribution-section'>
+		<section id="tokenomics-section" className='distribution-section'>
 			<Container
 				sx={{
 					padding: { xs: "0 20px" },

@@ -19,6 +19,7 @@ const GoldCatBlock = () => {
 						transform: "rotate(-45deg)",
 						top: "20%",
 						left: "0",
+						opacity: 0.7,
 					}}
 				/>
 				<DecorBlock
@@ -72,6 +73,7 @@ const GoldCatBlock = () => {
 							position={"relative"}
 							sx={{
 								mb: { xs: 4, sm: 7 },
+								zIndex: 5,
 							}}>
 							Tim the Cat
 						</Typography>
@@ -84,6 +86,7 @@ const GoldCatBlock = () => {
 							maxWidth={495}
 							sx={{
 								margin: "0 auto",
+								zIndex: 5,
 							}}>
 							Play the games, help Tim and his friends and discover the first
 							Tamagotchi game built on Solana
