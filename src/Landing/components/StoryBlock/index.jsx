@@ -57,6 +57,7 @@ const Story = () => {
 								<img
 									loading='lazy'
 									src={cat1}
+									alt='Tim The Cat'
 								/>
 							</picture>
 							<DecorBlock iconName='moon' />
@@ -74,6 +75,7 @@ const Story = () => {
 								<img
 									loading='lazy'
 									src={cat2}
+									alt='Tim The Cat'
 								/>
 							</picture>
 							<DecorBlock iconName='heartSm' />
@@ -146,6 +148,7 @@ const Story = () => {
 								<img
 									loading='lazy'
 									src={cat3}
+									alt='Tim The Cat'
 								/>
 							</picture>
 							<DecorBlock iconName='coin' />

@@ -105,6 +105,7 @@ const Features = () => {
 						<img
 							className='dec dec-star'
 							src={star}
+							alt=''
 						/>
 					</Box>
 				</Box>

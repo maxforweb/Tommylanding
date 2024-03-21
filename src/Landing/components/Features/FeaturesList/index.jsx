@@ -4,7 +4,6 @@ import console from "../../../assets/features/console.svg";
 import people from "../../../assets/features/people.svg";
 import list from "../../../assets/features/list.svg";
 import coin from "../../../assets/hero/icon2.svg";
-import star from "../../../components/Token/img/favorites.svg";
 
 const FeaturesList = () => {
 	return (
