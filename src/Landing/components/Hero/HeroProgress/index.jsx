@@ -31,11 +31,7 @@ const HeroProgress = () => {
 	}, []);
 
 	return (
-		<Box
-			className='header__actions-progress'
-			sx={{
-				maxWidth: "285px",
-			}}>
+		<Box className='header__actions-progress'>
 			<Box
 				className='header__actions-counter'
 				data-aos='bounce'
@@ -102,9 +98,16 @@ const HeroProgress = () => {
 					variant='body2'
 					fontWeight={500}
 					fontSize={16}
-					maxWidth={200}
+					maxWidth={355}
 					mt={2}>
-					The happier The Tim — The more you get
+					The happier the cat — the more you get
+				</Typography>
+				<Typography
+					variant='body2'
+					fontWeight={500}
+					fontSize={16}
+					maxWidth={335}>
+					Make it purr and enjoy rewards
 				</Typography>
 			</Box>
 		</Box>

@@ -3,6 +3,7 @@ import DecorBlock from "../DecorBlock";
 import "./gold.scss";
 
 import catGold from "../../assets/gold-cat.png";
+import arrowIcon from "../../assets/arrow-circle.svg";
 
 const GoldCatBlock = () => {
 	return (
@@ -72,10 +73,10 @@ const GoldCatBlock = () => {
 							zIndex={3}
 							position={"relative"}
 							sx={{
-								mb: { xs: 4, sm: 7 },
+								mb: { xs: 4, sm: 3 },
 								zIndex: 5,
 							}}>
-							Tim the Cat
+							Befriend Tomo
 						</Typography>
 						<Typography
 							variant='body3'
@@ -85,12 +86,26 @@ const GoldCatBlock = () => {
 							position={"relative"}
 							maxWidth={495}
 							sx={{
-								margin: "0 auto",
+								margin: "0 auto 2rem",
 								zIndex: 5,
 							}}>
-							Play the games, help Tim and his friends and discover the first
-							Tamagotchi game built on Solana
+							Pet the lucky cat, play games, and get rewards.
 						</Typography>
+						<Box
+							display={"flex"}
+							justifyContent={"center"}>
+							<a
+								className='btn'
+								href='#'>
+								<span>Join Solana fam</span>
+								<span className='btn__icon'>
+									<img
+										src={arrowIcon}
+										alt='arrow'
+									/>
+								</span>
+							</a>
+						</Box>
 					</Box>
 					<Box
 						className='gold-cat__img'

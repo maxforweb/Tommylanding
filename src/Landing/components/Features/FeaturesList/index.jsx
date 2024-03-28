@@ -3,7 +3,7 @@ import { Box, List, ListItem, Typography } from "@mui/material";
 import console from "../../../assets/features/console.svg";
 import people from "../../../assets/features/people.svg";
 import list from "../../../assets/features/list.svg";
-import coin from "../../../assets/hero/icon2.svg";
+import coin from "../../../assets/features/coin.svg";
 
 const FeaturesList = () => {
 	return (
@@ -35,11 +35,10 @@ const FeaturesList = () => {
 							fontWeight: 600,
 							mb: "10px",
 						}}>
-						Easy to Play
+						Play E123
 					</Typography>
 					<Typography variant='body2'>
-						No need to install additional apps - get an access through our Telegram-bot
-						and start your journey with Tom asap
+						No additional app needed: start with Telegram.
 					</Typography>
 				</Box>
 			</ListItem>
@@ -69,11 +68,10 @@ const FeaturesList = () => {
 							fontSize: "clamp(1.15rem, 2vw, 1.7rem)",
 							fontWeight: 600,
 						}}>
-						Referral program and community
+						Referral Program
 					</Typography>
 					<Typography variant='body2'>
-						Join the game with your friends and get boosts and bonuses to accelerate
-						your points growth, so you'll get your first NFTs in the shortest time
+						Invite friends to boost your bonuses and skyrocket the first NFT mint.
 					</Typography>
 				</Box>
 			</ListItem>
@@ -111,12 +109,11 @@ const FeaturesList = () => {
 								sm: "row",
 							},
 						}}>
-						Quests and tasks
+						Tasks
 						<span className='coming-soon__label'>Coming Soon</span>
 					</Typography>
 					<Typography variant='body2'>
-						Want to get the unique features for your Tom? Go through quests from us and
-						acquire unique clothes and accessories, boosts and bonuses!
+						Complete catchy quests with Tomo and get fancy clothes, boosts, and bonuses.
 					</Typography>
 				</Box>
 			</ListItem>
@@ -158,8 +155,7 @@ const FeaturesList = () => {
 						<span className='coming-soon__label'>Coming Soon</span>
 					</Typography>
 					<Typography variant='body2'>
-						Use your points to purchase unique features for your Tom and mint your
-						individual NFT.
+						Use rewards to boost your Tim and mint NFTs.
 					</Typography>
 				</Box>
 			</ListItem>

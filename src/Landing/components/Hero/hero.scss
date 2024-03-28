@@ -31,7 +31,8 @@
   .hero__header {
     grid-column:  1 / 4;
     h1 {
-      font-size: clamp(2rem, 5vw, 5rem);
+      font-size: clamp(2rem, 6vw, 5.5rem);
+      font-weight: 900;
     }
     p {
       font-size: clamp(1rem, 2vw, 2rem);
@@ -41,7 +42,7 @@
 
   .hero__body {
     display: grid;
-    grid-template-columns: 285px 1fr 230px;
+    grid-template-columns: 335px 1fr 230px;
     gap: 40px 22px;
     padding-top: var(--_hero-padding-top);
     padding-bottom: var(--_hero-padding-bot);

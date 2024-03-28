@@ -21,7 +21,7 @@ const Features = () => {
 				<Box
 					className='features__header'
 					data-aos='zoom-in'
-					maxWidth={650}
+					maxWidth={570}
 					textAlign='center'
 					sx={{
 						margin: {
@@ -34,12 +34,10 @@ const Features = () => {
 						mb={{
 							xs: "20px",
 						}}>
-						Features itself
+						Features
 					</Typography>
-					<Typography variant='body3'>Tim the Cat needs your care!</Typography>
 					<Typography variant='body3'>
-						Tim the Cat needs your care! Interact with him to earn coins, just like in
-						Tamagotchi!
+						Make Tomo the happiest cat on Earth Play and get rewards
 					</Typography>
 				</Box>
 				<Box
@@ -56,7 +54,7 @@ const Features = () => {
 							<Typography
 								variant='body3'
 								mr={3}>
-								Follow us for more info:
+								Follow us:
 							</Typography>
 							<Box
 								sx={{
@@ -92,9 +90,9 @@ const Features = () => {
 							/>
 						</picture>
 						<a
-							className='btn btn-sm'
+							className='btn btn-sm btn-transparent'
 							href='#'>
-							<span>Start now!</span>
+							<span>Telegram bot</span>
 							<span className='btn__icon'>
 								<img
 									src={arrowIcon}

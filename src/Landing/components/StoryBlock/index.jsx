@@ -22,27 +22,26 @@ const Story = () => {
 							className='story__col story__col-text'
 							data-aos='fade-right'>
 							<div className='story__col-text-wrap'>
-								<DecorBlock iconName='ellipse' />
 								<Typography
 									variant='h2'
 									className='story__title'
 									mb={5}>
-									The Story
+									About
 								</Typography>
 								<Typography
 									variant='body2'
 									className='story__text'
 									mb={3}>
-									On a cold, dark evening, Raj, the founder of Solana, discovered
-									a shivering, homeless cat under a cardboard box during a walk
-									with his dog, Myro.
+									It all started in Japan. Centuries ago, a stray cat beckoned Ii
+									Naotaka, the lord samurai of the Hikone domain, at the temple
+									gate. The man came in, got saved from a thunderstorm, and
+									decided to build a temple in honor of his savior.
 								</Typography>
 								<Typography
 									variant='body2'
 									className='story__text'>
-									Moved by the sight and guided by his love for animals, Raj took
-									the cat home, naming him Tom, and provided care, warmth, and
-									toys, showcasing his affection.
+									The cat was named Maneki Neko and started bringing fortune,
+									wealth, and prosperity to people who pet it.
 								</Typography>
 							</div>
 						</div>
@@ -89,9 +88,12 @@ const Story = () => {
 							<div className='story__col-text-wrap'>
 								<Typography
 									variant='body2'
-									className='story__text'>
-									As Solana grew, Tim, always by Raj's side during work calls,
-									became a beloved mascot of the Solana community.his dog, Myro.
+									className='story__text'
+									mb={3}>
+									In 2024, history repeated itself. Maneki Neko’s descendant
+									beckoned a group of online users at the Web 3 realms. They came
+									in, got rid of stress, and created a Tamagotchi-inspired game in
+									honor of their new friend.
 								</Typography>
 								<ul>
 									<li>
@@ -107,12 +109,6 @@ const Story = () => {
 										/>
 									</li>
 								</ul>
-								<Typography
-									variant='body2'
-									className='story__text'>
-									To celebrate Tim, the Solana community launched "Tim The Cat
-									Token" and a game!
-								</Typography>
 							</div>
 						</div>
 						<div
@@ -123,17 +119,8 @@ const Story = () => {
 									variant='body2'
 									className='story__text'
 									mb={3}>
-									Just as Raj did when he rescued and cared for Tom, within the
-									game, players can take care of their Tom by petting, feeding,
-									grooming, and accessorizing, just as Raj did when he rescued and
-									cared for Tom!
-								</Typography>
-								<Typography
-									variant='body2'
-									className='story__text'>
-									In addition to taking care of your Tom, you'll also earn rewards
-									for completing quests, forming partnerships, and engaging in
-									many other exciting activities within the game!
+									Now the cat named Tomo brings fortune and luck to people who pet
+									it. Just embrace it with love, hear it purr, and enjoy rewards.
 								</Typography>
 							</div>
 						</div>

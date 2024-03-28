@@ -20,9 +20,9 @@ const Footer = () => {
 			<DecorBlock
 				iconName='ellipse'
 				customStyles={{
-					left: "10%",
+					left: "0",
 					top: "0",
-					transform: "rotate(-90deg)",
+					transform: "rotate(-75deg)",
 					opacity: 1,
 				}}
 			/>
@@ -51,7 +51,15 @@ const Footer = () => {
 								fontSize: "clamp(1rem, 1.5vw, 1.5rem)",
 								lineHeight: "140%",
 							}}>
-							The cutest virtual pet supported by Solana community is waiting for you!
+							Start now!
+						</Typography>
+						<Typography
+							sx={{
+								fw: "400",
+								fontSize: "clamp(1rem, 1.5vw, 1.5rem)",
+								lineHeight: "140%",
+							}}>
+							Let’s be friends and have fun! I’m waiting for you.
 						</Typography>
 					</Box>
 					<Box className='footer__cat'>
