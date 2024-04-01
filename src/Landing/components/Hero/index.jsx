@@ -176,7 +176,7 @@ const Hero = () => {
 										src={heroIcon3}
 										alt='icon'
 									/>
-									Reffer Your Friends
+									Invite Friends
 								</Typography>
 							</motion.div>
 						</div>
