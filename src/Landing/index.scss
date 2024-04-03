@@ -107,7 +107,7 @@
         height: 70%;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%) translate3d(0, 0, 0);
         opacity: 1;
       }
     }
@@ -143,8 +143,8 @@
       height: 90%;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
-      opacity: 0.7;
+      transform: translate(-50%, -50%) translate3d(0, 0, 0);
+      opacity: 1;
       border-radius: 50%;
       aspect-ratio: 1;
       filter: blur(100px);
@@ -258,7 +258,6 @@
     transform: translate(-50%, -50%) translate3d(0, 0, 0);
     background: linear-gradient(180deg, rgba(238,41,255,1) 0%, rgba(128,37,255,1) 50%, rgba(23,33,255,1) 100%);
     border-radius: 40%;
-    // background-image: url('./assets/token-utility/gradient.webp');
     background-position: center center;
     background-repeat: no-repeat;
     pointer-events: none;
