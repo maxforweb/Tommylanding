@@ -12,7 +12,7 @@
 
 .features__row {
   display: grid;
-  grid-template-columns: 1fr 250px;
+  grid-template-columns: 1fr 450px;
   gap: 50px 150px;
   align-items: center;
 
@@ -60,12 +60,12 @@
   }
 
   .dec {
-    right: -110px;
+    right: 50%;
     bottom: -100px;
     z-index: 1;
     width: 450px;
     height: 450px;
-    transform: rotate(10deg);
+    transform: rotate(10deg) translateX(50%);
   }
 
   @media (max-width: 1280px) {
@@ -83,10 +83,6 @@
         margin: 0 auto;
       }
 
-    }
-
-    .dec {
-      display: none;
     }
 
     ul {
