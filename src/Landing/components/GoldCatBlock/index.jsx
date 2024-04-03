@@ -84,7 +84,7 @@ const GoldCatBlock = () => {
 							width='100%'
 							zIndex={3}
 							position={"relative"}
-							maxWidth={495}
+							maxWidth={425}
 							sx={{
 								margin: "0 auto 2rem",
 								zIndex: 5,

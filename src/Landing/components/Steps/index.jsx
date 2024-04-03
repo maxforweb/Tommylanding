@@ -15,7 +15,7 @@ const Steps = () => {
 						animationDelay={100}>
 						<a
 							className='btn btn-sm btn-transparent'
-							href='#'>
+							href='https://prodtest1.space/'>
 							<span>Try now!</span>
 							<span className='btn__icon'>
 								<img

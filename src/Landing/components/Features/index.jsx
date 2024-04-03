@@ -91,7 +91,7 @@ const Features = () => {
 						</picture>
 						<a
 							className='btn btn-sm btn-transparent'
-							href='#'>
+							href='https://t.me/pepetondrop_bot'>
 							<span>Telegram bot</span>
 							<span className='btn__icon'>
 								<img

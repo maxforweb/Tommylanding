@@ -27,7 +27,7 @@ const FeaturesList = () => {
 					src={console}
 					alt='icon'
 				/>
-				<Box>
+				<Box maxWidth={'475px'}>
 					<Typography
 						variant='body1'
 						sx={{
@@ -61,12 +61,13 @@ const FeaturesList = () => {
 					src={people}
 					alt='icon'
 				/>
-				<Box>
+				<Box maxWidth={'475px'}>
 					<Typography
 						variant='body1'
 						sx={{
 							fontSize: "clamp(1.15rem, 2vw, 1.7rem)",
 							fontWeight: 600,
+							mb: "10px",
 						}}>
 						Referral Program
 					</Typography>
@@ -94,7 +95,7 @@ const FeaturesList = () => {
 					src={list}
 					alt='icon'
 				/>
-				<Box>
+				<Box maxWidth={'475px'}>
 					<Typography
 						variant='body1'
 						gap={"10px"}
@@ -136,7 +137,7 @@ const FeaturesList = () => {
 					src={coin}
 					alt='icon'
 				/>
-				<Box>
+				<Box maxWidth={'475px'}>
 					<Typography
 						variant='body1'
 						gap={"10px"}

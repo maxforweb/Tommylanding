@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import cat from '../../assets/story/cat2.png';
+import cat from '../../assets/cat1.png';
 
 const Preloader = ({ loaded }) => {
 

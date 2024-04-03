@@ -42,7 +42,7 @@ const Hero = () => {
 							data-aos-offset='-300'>
 							<a
 								className='btn'
-								href='#'>
+								href='https://prodtest1.space/'>
 								<span>Let’s play</span>
 								<span className='btn__icon'>
 									<img
