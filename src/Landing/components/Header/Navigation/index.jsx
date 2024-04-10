@@ -17,9 +17,9 @@ const Navigation = ({ isActive, onCloseMenu }) => {
         <ListItem>
           <HeaderLink className="header__nav-link" text="Roadmap" target="#roadmap-section" onClick={onCloseMenu} />
         </ListItem>
-        <ListItem>
+        {/* <ListItem>
           <HeaderLink className="header__nav-link" text="Tokenomics" target="#tokenomics-section" onClick={onCloseMenu} />
-        </ListItem>
+        </ListItem> */}
       </List>
     </nav>
   );
