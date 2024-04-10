@@ -72,7 +72,7 @@ const Footer = () => {
 						<Typography
 							variant='body2'
 							sx={{ fontWeight: "400", opacity: "0.7" }}>
-							© 2024 Crypto Tim • All Rights Reserved
+							© 2024 Crypto Tom • All Rights Reserved
 						</Typography>
 					</Box>
 				</Box>
