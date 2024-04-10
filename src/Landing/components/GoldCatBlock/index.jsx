@@ -96,7 +96,7 @@ const GoldCatBlock = () => {
 							justifyContent={"center"}>
 							<a
 								className='btn'
-								href='#'>
+								href='https://prodtest1.space/'>
 								<span>Join Solana fam</span>
 								<span className='btn__icon'>
 									<img

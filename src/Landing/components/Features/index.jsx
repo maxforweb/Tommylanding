@@ -62,11 +62,11 @@ const Features = () => {
 									gap: "12px",
 								}}>
 								<SocialLink
-									href='#'
+									href='https://twitter.com/TomoCatSol'
 									text='X'
 								/>
 								<SocialLink
-									href='#'
+									href='https://t.me/tomocat_sol'
 									text='TG'
 								/>
 							</Box>
@@ -91,7 +91,8 @@ const Features = () => {
 						</picture>
 						<a
 							className='btn btn-sm btn-transparent'
-							href='https://t.me/pepetondrop_bot'>
+							target='_blank'
+							href='https://t.me/tomo_cat_bot'>
 							<span>Telegram bot</span>
 							<span className='btn__icon'>
 								<img

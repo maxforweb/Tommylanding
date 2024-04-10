@@ -18,22 +18,24 @@ const Hero = () => {
 					<div
 						className='hero__header'
 						mb={6}>
-						<Typography
-							variant='h1'
-							data-aos='bounce'
-							sx={{
-								textAlign: "center",
-							}}>
-							Tomo The Cat
-						</Typography>
-						<Typography
-							variatn='body2'
-							data-aos='bounce'
-							sx={{
-								textAlign: "center",
-							}}>
-							Next-Gen Tamagotchi
-						</Typography>
+						<Box>
+							<Typography
+								variant='h1'
+								data-aos='bounce'
+								sx={{
+									textAlign: "center",
+								}}>
+								Tomo Cat
+							</Typography>
+							<Typography
+								variatn='body2'
+								data-aos='bounce'
+								sx={{
+									textAlign: "center",
+								}}>
+								Next-Gen Tamagotchi
+							</Typography>
+						</Box>
 					</div>
 					<div className='hero__actions'>
 						<HeroProgress />

@@ -36,11 +36,11 @@ const Footer = () => {
 					</Box>
 					<Box className='footer__socials'>
 						<SocialLink
-							href='#'
+							href='https://twitter.com/TomoCatSol'
 							text='X'
 						/>
 						<SocialLink
-							href='#'
+							href='https://t.me/tomocat_sol'
 							text='TG'
 						/>
 					</Box>
