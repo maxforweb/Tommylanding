@@ -156,7 +156,7 @@ const FeaturesList = () => {
 						<span className='coming-soon__label'>Coming Soon</span>
 					</Typography>
 					<Typography variant='body2'>
-						Use rewards to boost your Tim and mint NFTs.
+						Use rewards to boost your Tomo and mint NFTs.
 					</Typography>
 				</Box>
 			</ListItem>

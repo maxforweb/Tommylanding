@@ -65,7 +65,7 @@ const Footer = () => {
 					<Box className='footer__cat'>
 						<img
 							src={catWebP}
-							alt='Crypto Tim'
+							alt='Crypto Tomo'
 						/>
 					</Box>
 					<Box className='footer__copyright'>

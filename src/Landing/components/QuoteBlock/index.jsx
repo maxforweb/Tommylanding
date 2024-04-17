@@ -55,7 +55,7 @@ const Quote = () => {
 					<Typography variant='body1' sx={{
 						fontSize: "clamp(1.15rem, 2vw, 1.5rem)",
 					}}>
-						With Tim The Cat, we have created a revolutionary digital currency that is designed for simplicity, security, and accessibility.
+						With Tomo The Cat, we have created a revolutionary digital currency that is designed for simplicity, security, and accessibility.
 					</Typography>
 					<Typography
 						variant='body1'
