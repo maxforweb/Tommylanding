@@ -160,6 +160,45 @@
     }
   }
 
+  .story__col-text-wrap {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0px 0px 40px;
+      font-size: clamp(2.5rem, 7vw, 3.75rem);
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    p,
+    a {
+      margin: 0px 0px 24px;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 23px;
+      color: rgb(255, 255, 255);
+
+      b,
+      strong {
+        font-weight: 700;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      font-weight: 700;
+      text-decoration: underline;
+      transition: opacity .25s;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+
   .story__col-text {
     position: relative;
     z-index: 3;

@@ -1,16 +1,29 @@
 import { useEffect, useState } from "react";
 
 import { Box, Typography } from "@mui/material";
+import DOMPurify from 'dompurify';
+import { useContext } from "react";
+import { SiteInfocontext } from "../../../../helpers/context";
+
 import catIcon from "../../../assets/why/icon1.svg";
 
 import "./progress.scss";
 
+const SafeHtml = ({ html, tagName = "div", ...typographyProps }) => {
+	const Tag = tagName;
+	const sanitizedHtml = DOMPurify.sanitize(html);
+	return (
+		<Tag dangerouslySetInnerHTML={{ __html: sanitizedHtml }} {...typographyProps}></Tag>
+	);
+};
+
 const HeroProgress = () => {
+	const { state } = useContext(SiteInfocontext);
 	const [counter, setCounter] = useState(0);
 
 	useEffect(() => {
 		const startTime = performance.now();
-		const duration = 2000;
+		const duration = 2300;
 		const endValue = 1000;
 
 		const animate = (currentTime) => {
@@ -20,7 +33,7 @@ const HeroProgress = () => {
 
 			setTimeout(() => {
 				setCounter(currentValue);
-			}, 2300);
+			}, duration);
 
 			if (progress < 1) {
 				requestAnimationFrame(animate);
@@ -82,7 +95,7 @@ const HeroProgress = () => {
 						position: "absolute",
 						top: 0,
 						left: 0,
-						width: "65%",
+						width: "0%",
 						height: "100%",
 						borderRadius: 20,
 						background:
@@ -94,21 +107,9 @@ const HeroProgress = () => {
 				className='hero__actions-progress-text'
 				data-aos='bounce'
 				data-aos-offset='-300'>
-				<Typography
-					variant='body2'
-					fontWeight={500}
-					fontSize={16}
-					maxWidth={355}
-					mt={2}>
-					The happier the cat — the more you get
-				</Typography>
-				<Typography
-					variant='body2'
-					fontWeight={500}
-					fontSize={16}
-					maxWidth={335}>
-					Make it purr and enjoy rewards
-				</Typography>
+				{state?.info.hero__actions_progress_text && (
+					<SafeHtml html={state?.info.hero__actions_progress_text} />
+				)}
 			</Box>
 		</Box>
 	);

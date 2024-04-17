@@ -3,14 +3,19 @@ import { motion } from "framer-motion";
 import "./hero.scss";
 
 import HeroProgress from "./HeroProgress";
-import catWebP from "../../assets/hero-cat.webp";
-import catWebPSm from "../../assets/hero-cat-sm.webp";
 import arrowIcon from "../../assets/arrow-circle.svg";
 import heroIcon1 from "../../assets/hero/icon1.svg";
 import heroIcon2 from "../../assets/hero/icon2.svg";
 import heroIcon3 from "../../assets/hero/icon3.svg";
 
+import { useContext } from "react";
+import { SiteInfocontext } from "../../../helpers/context";
+
 const Hero = () => {
+	const { state } = useContext(SiteInfocontext);
+
+	const heroTitleText = state?.info.site_h1 || "Tomo Cat";
+	const heroSubtitileText = state?.info.site_subtitle || "Next-Gen Tamagotchi";
 	return (
 		<section className='hero'>
 			<Container className='hero__container'>
@@ -25,7 +30,7 @@ const Hero = () => {
 								sx={{
 									textAlign: "center",
 								}}>
-								Tomo Cat
+								{heroTitleText}
 							</Typography>
 							<Typography
 								variatn='body2'
@@ -33,7 +38,7 @@ const Hero = () => {
 								sx={{
 									textAlign: "center",
 								}}>
-								Next-Gen Tamagotchi
+								{heroSubtitileText}
 							</Typography>
 						</Box>
 					</div>
@@ -44,8 +49,8 @@ const Hero = () => {
 							data-aos-offset='-300'>
 							<a
 								className='btn'
-								href='https://prodtest1.space/'>
-								<span>Let’s play</span>
+								href={state?.info.play_link}>
+								<span>{state?.info.play_link_name}</span>
 								<span className='btn__icon'>
 									<img
 										src={arrowIcon}
@@ -100,15 +105,11 @@ const Hero = () => {
 							data-aos='bounce'>
 							<picture>
 								<source
-									srcSet={catWebPSm}
-									media='(max-width: 1024px)'
-								/>
-								<source
-									srcSet={catWebP}
+									srcSet={state?.info.hero__body_img_main_webp}
 									media='(min-width: 1024.98px)'
 								/>
 								<img
-									src={catWebP}
+									src={state?.info.hero__body_img_main}
 									alt='cat'
 								/>
 							</picture>

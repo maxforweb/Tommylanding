@@ -32,6 +32,15 @@
     }
   }
 
+  .hero__actions-progress-text {
+    margin: 16px 0px 0px;
+    line-height: 23px;
+    color: rgb(255, 255, 255);
+    font-family: Grandstander;
+    font-weight: 500;
+    font-size: 16px;
+    max-width: 355px;
+  }
 
   .hero__body {
     display: grid;
@@ -156,19 +165,6 @@
 
     min-height: 100vh;
     min-height: 100svh;
-
-    &::before {
-      // background-image: url("data:image/svg+xml,%3Csvg width='360' height='1743' viewBox='0 0 360 1743' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_f_3246_812)'%3E%3Ccircle cx='166' cy='430' r='329' fill='%23D9D9D9'/%3E%3Ccircle cx='166' cy='430' r='329' fill='url(%23paint0_linear_3246_812)' fill-opacity='0.5'/%3E%3C/g%3E%3Cg filter='url(%23filter1_f_3246_812)'%3E%3Cellipse cx='265.5' cy='282' rx='493.5' ry='479' fill='url(%23paint1_linear_3246_812)'/%3E%3C/g%3E%3Cg filter='url(%23filter2_f_3246_812)'%3E%3Crect x='-98.9512' y='170.247' width='691.902' height='541.666' fill='url(%23paint2_linear_3246_812)'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_f_3246_812' x='-1147' y='-883' width='2626' height='2626' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='492' result='effect1_foregroundBlur_3246_812'/%3E%3C/filter%3E%3Cfilter id='filter1_f_3246_812' x='-428' y='-397' width='1387' height='1358' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='100' result='effect1_foregroundBlur_3246_812'/%3E%3C/filter%3E%3Cfilter id='filter2_f_3246_812' x='-298.951' y='-29.7529' width='1091.9' height='941.666' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='100' result='effect1_foregroundBlur_3246_812'/%3E%3C/filter%3E%3ClinearGradient id='paint0_linear_3246_812' x1='166' y1='101' x2='166' y2='759' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23EE29FF'/%3E%3Cstop offset='1' stop-color='%231721FF'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear_3246_812' x1='265.5' y1='-197' x2='265.5' y2='761' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%2300C2FF' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FF29C3'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint2_linear_3246_812' x1='247' y1='170.247' x2='247' y2='711.913' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23184BFF' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23174AFF'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
-      // width: 200%;
-      // height: 200%;
-      // top: -5%;
-      // height: 200%;
-      // width: 250vw;
-      // width: 300%;
-      // height: 300%;
-      // left: 90%;
-      // top: -10%;
-    }
 
     .hero__body {
       flex-direction: column;

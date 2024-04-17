@@ -3,8 +3,6 @@ import { Box, Container, Typography } from "@mui/material";
 import FeaturesList from "./FeaturesList";
 import SocialLink from "../SocialLink";
 
-import iphone from "../../assets/features/iphone.png";
-import iphoneWebP from "../../assets/features/iphone.webp";
 import arrowIcon from "../../assets/arrow-circle.svg";
 import star from "../../assets/star.svg";
 
@@ -14,7 +12,7 @@ import { useContext } from "react";
 import { SiteInfocontext } from "../../../helpers/context";
 
 const Features = () => {
-	const {state} = useContext(SiteInfocontext);
+	const { state } = useContext(SiteInfocontext);
 	return (
 		<section
 			id='features-section'
@@ -40,7 +38,7 @@ const Features = () => {
 						Features
 					</Typography>
 					<Typography variant='body3'>
-						Make Tomo the happiest cat on Earth Play and get rewards
+						{state?.info.features_subtitle}
 					</Typography>
 				</Box>
 				<Box
@@ -64,14 +62,13 @@ const Features = () => {
 									display: "flex",
 									gap: "12px",
 								}}>
-								<SocialLink
-									href='https://twitter.com/TomoCatSol'
-									text='X'
-								/>
-								<SocialLink
-									href='https://t.me/tomocat_sol'
-									text='TG'
-								/>
+								{state?.socials.map((social, index) => (
+									<SocialLink
+										key={index}
+										href={social.link}
+										text={social.name}
+									/>
+								))}
 							</Box>
 						</Box>
 					</Box>
@@ -85,17 +82,16 @@ const Features = () => {
 							alignItems: "center",
 						}}>
 						<picture>
-							<source srcSet={iphoneWebP} />
+							<source srcSet={state?.info.features__phone_webp} />
 							<img
 								className='features__phone'
-								src={iphone}
+								src={state?.info.features__phone}
 								alt='cat'
 							/>
 						</picture>
 						<a
 							className='btn btn-sm btn-transparent'
-							target='_blank'
-							href='https://t.me/tomo_cat_bot'>
+							href={state?.info.bot_link}>
 							<span>Telegram bot</span>
 							<span className='btn__icon'>
 								<img

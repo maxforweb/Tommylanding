@@ -1,21 +1,21 @@
 import { List, ListItem } from "@mui/material";
 import SocialLink from "../../SocialLink";
 
+import { useContext } from "react";
+import { SiteInfocontext } from "../../../../helpers/context";
+
 const HeaderSocials = () => {
+	const { state } = useContext(SiteInfocontext);
 	return (
 		<List className='header__socials'>
-			<ListItem>
-				<SocialLink
-					href='https://twitter.com/TomoCatSol'
-					text='X'
-				/>
-			</ListItem>
-			<ListItem>
-				<SocialLink
-					href='https://t.me/tomocat_sol'
-					text='TG'
-				/>
-			</ListItem>
+			{state?.socials.map((social, index) => (
+				<ListItem key={index}>
+					<SocialLink
+						href={social.link}
+						text={social.name}
+					/>
+				</ListItem>
+			))}
 		</List>
 	);
 };

@@ -2,10 +2,13 @@ import { Box, Container, Typography } from "@mui/material";
 import DecorBlock from "../DecorBlock";
 import "./gold.scss";
 
-import catGold from "../../assets/gold-cat.png";
 import arrowIcon from "../../assets/arrow-circle.svg";
 
+import { useContext } from "react";
+import { SiteInfocontext } from "../../../helpers/context";
+
 const GoldCatBlock = () => {
+	const { state } = useContext(SiteInfocontext);
 	return (
 		<section className='gold-cat'>
 			<Container
@@ -76,7 +79,7 @@ const GoldCatBlock = () => {
 								mb: { xs: 4, sm: 3 },
 								zIndex: 5,
 							}}>
-							Befriend Tomo
+							{state?.info.site_befriend_title}
 						</Typography>
 						<Typography
 							variant='body3'
@@ -89,15 +92,15 @@ const GoldCatBlock = () => {
 								margin: "0 auto 2rem",
 								zIndex: 5,
 							}}>
-							Pet the lucky cat, play games, and get rewards.
+							{state?.info.site_befriend_subtitle}
 						</Typography>
 						<Box
 							display={"flex"}
 							justifyContent={"center"}>
 							<a
 								className='btn'
-								href='https://prodtest1.space/'>
-								<span>Join Solana fam</span>
+								href={state?.info.solana_fam_link}>
+								<span>{state?.info.solana_fam_link_name}</span>
 								<span className='btn__icon'>
 									<img
 										src={arrowIcon}
@@ -116,7 +119,7 @@ const GoldCatBlock = () => {
 						<img
 							data-aos='bounce'
 							data-aos-offset='100'
-							src={catGold}
+							src={state?.info.gold_char_image}
 							alt='Golden Cat'
 							loading='lazy'
 						/>

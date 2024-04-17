@@ -14,25 +14,29 @@ import { useGetSitInfoQuery } from "../services";
 import { SiteInfocontext } from "../helpers/context";
 
 const Landing = () => {
-	const {updateState} = useContext(SiteInfocontext);
-	const {data, isLoading, isError} = useGetSitInfoQuery();
+	const { updateState } = useContext(SiteInfocontext);
+	const { data, isLoading, isError } = useGetSitInfoQuery();
+	const [preloaderLoaded, setPreloaderLoaded] = useState(false);
 
 	useEffect(() => {
-		!isLoading && AOS.init({ easing: "custom" });
-		
 		if (!isLoading && data) {
 			updateState(data);
+
+			setTimeout(() => {
+				setPreloaderLoaded(true);
+				AOS.init({ easing: "custom" });
+			}, 1000);
 		}
-	}, [isLoading, data]);
-	
+	}, [isLoading, data, updateState]);
+
 	if (isError) {
 		return (
-			<h1 style={{textAlign: 'center'}}>Error while fetching</h1>
+			<h1 style={{ textAlign: 'center', margin: 'auto', fontSize: "40px" }}>Error while fetching</h1>
 		)
 	}
 	return (
 		<>
-			<Preloader loaded={!isLoading} />
+			<Preloader loaded={preloaderLoaded} />
 			<Header />
 			<Main />
 			<Footer />

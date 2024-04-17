@@ -1,13 +1,22 @@
 import { Box, Typography } from "@mui/material";
-
-import logo from "../../assets/logo.png";
-import catWebP from "../../assets/hero-cat.webp";
 import SocialLink from "../SocialLink";
 import DecorBlock from "../DecorBlock";
 
+import DOMPurify from 'dompurify';
+import { useContext } from "react";
+import { SiteInfocontext } from "../../../helpers/context";
 import "./footer.scss";
 
+const SafeHtml = ({ html, tagName = "div", ...typographyProps }) => {
+	const Tag = tagName;
+	const sanitizedHtml = DOMPurify.sanitize(html);
+	return (
+		<Tag dangerouslySetInnerHTML={{ __html: sanitizedHtml }} {...typographyProps}></Tag>
+	);
+};
+
 const Footer = () => {
+	const { state } = useContext(SiteInfocontext);
 	return (
 		<Box
 			sx={{
@@ -30,41 +39,26 @@ const Footer = () => {
 				<Box className='footer__grid'>
 					<Box className='footer__logo'>
 						<img
-							src={logo}
-							alt='Crypto Tom'
+							src={state?.info.header__logo}
+							alt='Tomo Cat'
 						/>
 					</Box>
 					<Box className='footer__socials'>
-						<SocialLink
-							href='https://twitter.com/TomoCatSol'
-							text='X'
-						/>
-						<SocialLink
-							href='https://t.me/tomocat_sol'
-							text='TG'
-						/>
+
+						{state?.socials.map((social, index) => (
+							<SocialLink
+								key={index}
+								href={social.link}
+								text={social.name}
+							/>
+						))}
 					</Box>
 					<Box className='footer__text'>
-						<Typography
-							sx={{
-								fw: "400",
-								fontSize: "clamp(1rem, 1.5vw, 1.5rem)",
-								lineHeight: "140%",
-							}}>
-							Start now!
-						</Typography>
-						<Typography
-							sx={{
-								fw: "400",
-								fontSize: "clamp(1rem, 1.5vw, 1.5rem)",
-								lineHeight: "140%",
-							}}>
-							Let’s be friends and have fun! I’m waiting for you.
-						</Typography>
+						<SafeHtml html={state?.info.footer_descr} />
 					</Box>
 					<Box className='footer__cat'>
 						<img
-							src={catWebP}
+							src={state?.info.footer_char_img_webp}
 							alt='Crypto Tomo'
 						/>
 					</Box>
@@ -72,7 +66,7 @@ const Footer = () => {
 						<Typography
 							variant='body2'
 							sx={{ fontWeight: "400", opacity: "0.7" }}>
-							© 2024 Crypto Tomo • All Rights Reserved
+							{state?.info.site_footer_copy}
 						</Typography>
 					</Box>
 				</Box>

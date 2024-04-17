@@ -3,48 +3,30 @@ import "./steps.scss";
 import arrowIcon from "../../assets/arrow-circle.svg";
 import { Box, Container } from "@mui/material";
 
+import { useContext } from "react";
+import { SiteInfocontext } from "../../../helpers/context";
+
 const Steps = () => {
+	const { state } = useContext(SiteInfocontext);
 	return (
 		<section id='roadmap-section'>
 			<Container>
-				<Box className='steps__row'>
-					<Step
-						title={"Phase 1"}
-						subtitle={"Pet the cat and earn points"}
-						items={["Leaderboard", "Web and TG apps", "Referral program"]}
-						animationDelay={100}>
-						<a
-							className='btn btn-sm btn-transparent'
-							href='https://prodtest1.space/'>
-							<span>Try now!</span>
-							<span className='btn__icon'>
-								<img
-									src={arrowIcon}
-									alt='arrow'
-								/>
-							</span>
-						</a>
-					</Step>
-					<Step
-						title={"Phase 2"}
-						items={[
-							"Basic NFT mint",
-							"Cat Sleep (mining)",
-							"Feed Cat (boosters)",
-							"Shelters",
-						]}
-						animationDelay={200}
-					/>
-					<Step
-						title={"Phase 3"}
-						items={["Shop with clothes", "Loot Boxes", "NFT re-mint launch"]}
-						animationDelay={300}
-					/>
-					<Step
-						title={"Phase 4"}
-						items={["Clean the Cat place", "Play with cat"]}
-						animationDelay={400}
-					/>
+				<Box className="steps__row">
+					{state?.phases.map((phase, index) => (
+						<Step
+							key={index}
+							title={phase.name}
+							subtitle={phase.descr}
+							items={phase.list.map(listItem => listItem.name)}
+							animationDelay={(index + 1) * 100}
+							children={phase.try_link ? (
+								<a href={phase.try_link} className="btn btn-sm btn-transparent">
+									Try now!
+									<span className="btn__icon">{arrowIcon}</span>
+								</a>
+							) : null}
+						/>
+					))}
 				</Box>
 			</Container>
 		</section>
