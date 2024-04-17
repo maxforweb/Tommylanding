@@ -10,8 +10,11 @@ import star from "../../assets/star.svg";
 
 import "./features.scss";
 import DecorBlock from "../DecorBlock";
+import { useContext } from "react";
+import { SiteInfocontext } from "../../../helpers/context";
 
 const Features = () => {
+	const {state} = useContext(SiteInfocontext);
 	return (
 		<section
 			id='features-section'

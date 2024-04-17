@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -10,28 +10,29 @@ import {
 	Preloader
 } from "./components";
 import "./index.scss";
+import { useGetSitInfoQuery } from "../services";
+import { SiteInfocontext } from "../helpers/context";
 
 const Landing = () => {
-	const [preloaderLoaded, setPreloaderLoaded] = useState(false);
+	const {updateState} = useContext(SiteInfocontext);
+	const {data, isLoading, isError} = useGetSitInfoQuery();
 
 	useEffect(() => {
-		const preloaderTimeout = setTimeout(() => {
-			setPreloaderLoaded(true);
-		}, 1500);
-
-		const timeout = setTimeout(() => {
-			AOS.init({
-				easing: "custom",
-			});
-		}, 2300);
-		return () => {
-			clearTimeout(timeout);
-			clearTimeout(preloaderTimeout);
-		};
-	}, []);
+		!isLoading && AOS.init({ easing: "custom" });
+		
+		if (!isLoading && data) {
+			updateState(data);
+		}
+	}, [isLoading, data]);
+	
+	if (isError) {
+		return (
+			<h1 style={{textAlign: 'center'}}>Error while fetching</h1>
+		)
+	}
 	return (
 		<>
-			<Preloader loaded={preloaderLoaded} />
+			<Preloader loaded={!isLoading} />
 			<Header />
 			<Main />
 			<Footer />
