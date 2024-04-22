@@ -2,13 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-
-import {
-	Header,
-	Main,
-	Footer,
-	Preloader
-} from "./components";
+import { Header, Main, Footer, Preloader } from "./components";
 import "./index.scss";
 import { useGetSitInfoQuery } from "../services";
 import { SiteInfocontext } from "../helpers/context";
@@ -31,8 +25,10 @@ const Landing = () => {
 
 	if (isError) {
 		return (
-			<h1 style={{ textAlign: 'center', margin: 'auto', fontSize: "40px" }}>Error while fetching</h1>
-		)
+			<h1 style={{ textAlign: "center", margin: "auto", fontSize: "40px" }}>
+				Error while fetching data
+			</h1>
+		);
 	}
 	return (
 		<>
