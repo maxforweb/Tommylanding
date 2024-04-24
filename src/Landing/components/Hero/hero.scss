@@ -73,8 +73,26 @@
       background: linear-gradient(90deg, rgba(24,75,255,0) 0%, rgba(23,74,255,1) 100%);
     }
 
+    .hero__buttons {
+      display: flex;
+      flex-direction: column;
+
+      @media (max-width: 1024px) {
+        align-items: center;
+
+        .btn {
+          width: 100%;
+          max-width: 100%;
+          justify-content: center;
+        }
+      }
+    }
+
     .btn {
-      margin-top: 260px;
+      margin-top: 1.7rem;
+      &:first-of-type {
+        margin-top: 260px;
+      }
     }
   }
 
@@ -129,7 +147,10 @@
       align-items: center;
       gap: 40px;
       .btn {
-        margin-top: 0;
+        margin-top: 1rem;
+        &:first-of-type {
+          margin-top: 0;
+        }
       }
     }
 
@@ -171,10 +192,6 @@
       align-items: center;
       gap: 15px;
       padding: 0;
-      // height: calc(100vh - var(--_hero-padding-top) - var(--_hero-padding-bot));
-      // height: calc(100svh - var(--_hero-padding-top) - var(--_hero-padding-bot));
-      // min-height: 100vh;
-      // min-height: 100svh;
     }
 
     .hero__header {

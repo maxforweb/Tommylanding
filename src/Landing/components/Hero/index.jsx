@@ -47,17 +47,30 @@ const Hero = () => {
 						<div
 							data-aos='bounce'
 							data-aos-offset='-300'>
-							<a
-								className='btn'
-								href={state?.info.play_link}>
-								<span>{state?.info.play_link_name}</span>
-								<span className='btn__icon'>
-									<img
-										src={arrowIcon}
-										alt='arrow'
-									/>
-								</span>
-							</a>
+							<Box className='hero__buttons'>
+								<a
+									className='btn'
+									href={state?.info.play_link}>
+									<span>{state?.info.play_link_name}</span>
+									<span className='btn__icon'>
+										<img
+											src={arrowIcon}
+											alt='arrow'
+										/>
+									</span>
+								</a>
+								<a
+									className='btn'
+									href={state?.info.bot_link}>
+									<span>{state?.info.bot_link_name}</span>
+									<span className='btn__icon'>
+										<img
+											src={arrowIcon}
+											alt='arrow'
+										/>
+									</span>
+								</a>
+							</Box>
 						</div>
 					</div>
 					<div
