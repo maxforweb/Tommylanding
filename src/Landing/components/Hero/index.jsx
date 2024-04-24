@@ -61,8 +61,8 @@ const Hero = () => {
 								</a>
 								<a
 									className='btn'
-									href={state?.info.bot_link}>
-									<span>{state?.info.bot_link_name}</span>
+									href={state?.info.play_bot_link}>
+									<span>{state?.info.play_bot_link_name}</span>
 									<span className='btn__icon'>
 										<img
 											src={arrowIcon}
